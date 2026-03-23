@@ -1,29 +1,205 @@
 papers:
 
+  # ──────────────────────────── 법이론·법실증주의 ─────────────────────────────
+
   - title: "법의 해석적 수렴 이론"
     title_en: "The Interpretive Convergence Theory of Law"
     authors: "<b>손제연</b>"
-    venue: "법철학연구 (Korean Journal of Legal Philosophy), Vol. 28, No. 3, pp. 199-237. 2025."
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 28, No. 3"
+    pages: "pp. 199–237"
+    year: "2025"
+    category: "법이론"
+    keywords: ["해석적 수렴 이론", "법실증주의", "해석주의", "법적 규범성", "출현주의", "화행적수인"]
+    keywords_en: ["Interpretive Convergence Theory", "Legal Positivism", "Interpretivism", "Legal Normativity", "Emergentism", "uptake"]
+    abstract: "법실증주의와 도덕적 해석주의 양자에 대한 대안으로, 법규범이 공동체 내 해석적 수렴 과정에서 '출현(emerge)'하며 구속력을 획득한다는 '해석적 수렴 이론'을 정립한다. 법은 제도화된 행위뿐 아니라 법적 지향성을 가진 다양한 행위의 담론적 변형을 통해 생성되며, 화행적수인(uptake)과 반복적 해석을 통해 법적 내용과 효력을 획득한다."
+    abstract_en: "This paper develops an alternative to legal positivism and moral interpretivism by offering a new emergentist account of how legal norms arise through interpretive convergence within a community. Legal obligations are normative propositions that crystallize from the collective interpretive practices of the legal community, grounding law's authority in social practice rather than in any single rule or moral criterion."
     paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003296700"
+    cite: 0
     selected: y
 
   - title: "법의 유효성 문제와 라드브루흐 공식"
     title_en: "The Validity of Law and the Radbruch Formula"
     authors: "<b>손제연</b>"
-    venue: "법철학연구 (Korean Journal of Legal Philosophy), Vol. 27, No. 1, pp. 85-148. 2024."
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 27, No. 1"
+    pages: "pp. 85–148"
+    year: "2024"
+    category: "법이론"
+    keywords: ["라드브루흐 공식", "법의 유효성", "법과 도덕", "이유-기반 설명", "법적 책무"]
+    keywords_en: ["Radbruch Formula", "Validity of Law", "Law and Morality", "Reason-Based Account", "Legal Obligation"]
+    abstract: "라드브루흐의 법철학과 법의 유효성 개념이 불러일으킨 논쟁에서 출발하여, 알렉시의 '유효성개념' 논의가 국내 담론에 미친 부정적 영향을 살펴보고, 법의 유효성 문제에 대한 적절한 이론적 설명으로서 행위이유 기반의 법적 책무론을 제시한다. 라드브루흐의 견해를 알렉시, 하트, 풀러, 라즈의 이론과 비교한다."
+    abstract_en: "Beginning from the controversies sparked by Radbruch's legal philosophy, this paper critically evaluates Alexy's unique discussions on the concept of legal validity and argues that providing a reason-based account of legal obligation is crucial for an appropriate theoretical account of legal validity, comparing Radbruch's views with those of Alexy, Hart, Fuller, and Raz."
     paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003080283"
+    cite: 0
     selected: y
 
   - title: "풀러의 법의 내적 도덕성에 대한 오해"
     title_en: "Some Misconceptions about the Inner Morality of Law"
     authors: "<b>손제연</b>"
-    venue: "법철학연구 (Korean Journal of Legal Philosophy), Vol. 25, No. 3, pp. 139-164. 2022."
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 25, No. 3"
+    pages: "pp. 139–164"
+    year: "2022"
+    category: "법이론"
+    keywords: ["론 풀러", "내적 도덕성", "형식주의", "기능주의", "절차적 자연법론", "유노믹스"]
+    keywords_en: ["Lon Fuller", "Inner Morality of Law", "Formalism", "Functionalism", "Procedural Natural Law", "Eunomics"]
+    abstract: "풀러의 법이론을 법의 지배 이상이나 절차적 자연법론으로 이해하는 것이 정합적 이해를 방해함을 보이고, 8개 목록의 진정한 근거는 형식주의나 기능주의가 아닌 자기주도적 시민을 전제하는 상호작용적 법이해, 즉 유노믹스(eunomics)의 기획에 있음을 논증한다."
+    abstract_en: "Treating Fuller's discussion as equivalent to the rule of law or procedural natural law prevents a coherent understanding of his conception of law. Fuller's famous eight desiderata should not be regarded as a defense for legal formalism or functionalism; rather, they are grounded in his interactive legal theory of eunomics, which assumes self-directed citizens as central agents."
     paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002923254"
+    cite: 3
     selected: y
+
+  - title: "법적 표현주의와 표현적 해악의 본성"
+    title_en: "Legal Expressivism and the Nature of Expressive Harm"
+    authors: "<b>손제연</b>"
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 22, No. 2"
+    pages: "pp. 79–124"
+    year: "2019"
+    category: "법이론"
+    keywords: ["법적 표현주의", "표현적 해악", "법적 진술", "의미 정합성", "법적 정당성"]
+    keywords_en: ["Legal Expressivism", "Expressive Harm", "Legal Statements", "Semantic Integrity", "Legitimacy"]
+    abstract: "법적 표현주의를 인과적 영향 확장론과 규범적 토대 제공론으로 분류하고, 표현적 해악은 사회적 의미나 입법자의 정신상태가 아니라 법체계가 전제하는 의미체계의 정합성과 관련됨을 주장한다. 이 정합성이 침해될 때 표현적 해악이 발생하며, 이것이 법수용의 전제가 된다."
+    abstract_en: "This paper categorizes legal expressivism into two types and argues that expressive harm is not merely about social meaning or legislative mental states, but is tied to the semantic integrity of the legal system itself. Maintaining this integrity is important because it is the precondition for members' acceptance of the legal system as the law of their society."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002495391"
+    cite: 1
+    selected: y
+
+  # ─────────────────────────── 인간존엄·인권 ────────────────────────────────
+
+  - title: "위상적 개념으로서의 인간존엄"
+    title_en: "Understanding Human Dignity as a Topological Concept"
+    authors: "<b>손제연</b>"
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 21, No. 1"
+    pages: "pp. 295–338"
+    year: "2018"
+    category: "인간존엄"
+    keywords: ["인간존엄", "디그니타스", "높은 지위", "위상적 개념", "칸트", "월드론", "센슨"]
+    keywords_en: ["Human Dignity", "Dignitas", "High Status", "Topological Concept", "Kant", "Waldron", "Sensen"]
+    abstract: "인간존엄 개념의 어원인 dignitas(높은 지위)에서 출발하여, 현대적 인간존엄 개념도 인간성 혹은 도덕성의 우월성을 표현하는 위상적(topological) 개념으로서 고전적 dignitas를 계승하고 있음을 밝힌다."
+    abstract_en: "Starting from dignitas as elevated rank, this paper shows that the contemporary concept of human dignity also expresses the elevation of humanity or morality, inheriting dignitas as a topological concept in a distinctive manner. This paper is currently the most cited work in the author's portfolio."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002344173"
+    cite: 16
+    selected: y
+
+  - title: "인간존엄 존중 규범의 정당화"
+    title_en: "Justification of a Moral Claim to Respect Human Dignity"
+    authors: "<b>손제연</b>"
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 23, No. 1"
+    pages: "pp. 37–76"
+    year: "2020"
+    category: "인간존엄"
+    keywords: ["인간존엄", "강한 인간존엄주의", "정당화", "법적 인간존엄주의"]
+    keywords_en: ["Human Dignity", "Strong Dignitarianism", "Justification", "Legal Dignitarianism"]
+    abstract: "강한 인간존엄주의가 기존 윤리이론과 어떻게 구별되는지를 밝히고, 이를 정당화하기 위해 논증되어야 할 세부 논제들을 체계적으로 검토한다. 나아가 법적 인간존엄주의—인간존엄 존중 요청이 특정 법규범의 유효성을 필연적으로 함축한다는 주장—를 분석한다."
+    abstract_en: "This paper examines the detailed theses needed to justify a strong version of human dignitarianism and critically analyzes legal human dignitarianism: the thesis that a moral claim to respect human dignity necessarily implies the legal validity of norms related to guaranteeing human dignity."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002584158"
+    cite: 0
+    selected: n
+
+  # ──────────────────────── 정의론·분배·자유주의 ──────────────────────────────
+
+  - title: "불운으로서의 감염: 팬데믹 상황에서 자율적 행위자의 권리와 책임"
+    title_en: "Infection as Bad Luck: The Right and Responsibility of Autonomous Agents in Pandemics"
+    authors: "<b>손제연</b>"
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 24, No. 2"
+    pages: "pp. 297–340"
+    year: "2021"
+    category: "정의론"
+    keywords: ["자유주의", "운평등주의", "매개체 논변", "팬데믹", "특별희생이론"]
+    keywords_en: ["Liberalism", "Luck Egalitarianism", "Vector Argument", "COVID-19", "Pandemic", "Sonderopfertheorie"]
+    abstract: "팬데믹에서의 감염 손실은 개인 책임이 아닌 순전한 불운(brute luck)에 해당함을 밝히고, '매개체 논변'을 비판적으로 분석한다. 불운으로 야기된 사회적 손실의 복원 비용은 대칭적 동등 분담 원리에 기초해야 한다는 자유주의적 분배 이론을 제시한다."
+    abstract_en: "This paper argues that most pandemic-related losses constitute brute misfortune rather than individual responsibility, critically analyzes the 'vector argument,' and argues that restoration costs caused by no-fault bad luck should be distributed on the principle of symmetrically equal sharing, based on liberal rather than welfare-state grounds."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002753846"
+    cite: 2
+    selected: y
+
+  - title: "『한국 사회에서 정의란 무엇인가』에 대한 비판적 검토"
+    title_en: "A Critical Analysis of Dokyun Kim's Theory of Justice in Korea"
+    authors: "<b>손제연</b>"
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 24, No. 1"
+    pages: "pp. 273–312"
+    year: "2021"
+    category: "정의론"
+    keywords: ["정의", "제도적 응분이론", "롤즈의 우선성 문제", "사무엘 셰플러"]
+    keywords_en: ["Justice", "Institutional Theory of Desert", "Rawls' Priority Problem", "Samuel Scheffler"]
+    abstract: "김도균의 『한국 사회에서 정의란 무엇인가』를 비판적으로 검토하여, 헌법적 실천에서 정의의 원천을 찾으려는 시도의 문제점과, 응분 원칙의 조건부 정의 원칙으로서의 위상 설정에 대한 오해를 분석한다."
+    abstract_en: "This article critically examines two arguments in Dokyun Kim's Theory of Justice in Korea: the attempt to find justice in constitutional practices, and the position of the desert principle. It argues that Kim's view stems from misunderstandings about Rawls' priority problem and the institutional theory of desert."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002714278"
+    cite: 0
+    selected: n
+
+  # ─────────────────────────── 칸트 법철학 ─────────────────────────────────
+
+  - title: "칸트의 법(Recht) 관념 ―『법이론』에 등장하는 '외적 자유' 개념을 중심으로―"
+    title_en: "Kant's Conception of 'Recht'"
+    authors: "<b>손제연</b>"
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 21, No. 3"
+    pages: "pp. 53–88"
+    year: "2018"
+    category: "칸트"
+    keywords: ["칸트", "윤리형이상학", "외적 자유", "법이론", "'Recht'와 'recht'"]
+    keywords_en: ["Kant", "Metaphysics of Morals", "External Freedom", "Doctrine of Right", "Recht"]
+    abstract: "칸트 『법이론』의 기초개념을 해설하고, '외적 자유'의 이중적 사용에 대한 오해를 교정한다. 외적 자유는 대상이 의사 외부에 있는 경우가 아니라 행위의 동기가 의무 이념 이외의 것인 경우를 뜻함을 밝히며, Recht의 번역 문제를 논의한다."
+    abstract_en: "This paper examines the basic concepts of Kant's Rechtslehre, corrects misunderstandings surrounding 'external freedom,' and argues that the concept of Recht should be understood as a concept grounded in morality rather than separate from it, also addressing the difficulties in translating 'Recht' and 'recht'."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002428217"
+    cite: 3
+    selected: n
+
+  # ──────────────────────────── AI 윤리 ────────────────────────────────────
 
   - title: "약인공지능 시대의 윤리적 위기: 개별화된 예측 정보의 증가로 인한 상호협력 기반의 상실"
     title_en: "An Inconvenient Truth of Weak AI: Fear of the Predictable, Not Fear of the uneXplainable"
     authors: "<b>손제연</b>"
-    venue: "윤리학 (The Korean Journal of Ethics), Vol. 11, No. 2, pp. 71-110. 2022."
+    venue: "윤리학 (The Korean Journal of Ethics)"
+    volume: "Vol. 11, No. 2"
+    pages: "pp. 71–110"
+    year: "2022"
+    category: "AI 윤리"
+    keywords: ["약인공지능", "상호협력", "개별화된 정보", "설명가능성", "신뢰할 수 있는 AI"]
+    keywords_en: ["Weak AI", "Mutual Cooperation", "Personalized Information", "Explainability", "Trustworthy AI"]
+    abstract: "개별 신용 예측 기술이 고도화될수록 신용사회의 기초가 오히려 위협받는 역설을 규명한다. 약인공지능의 핵심 위기는 블랙박스 문제가 아니라 강화된 개인별 예측 기술로 인한 상호협력 기반의 상실이며, '설명가능한 AI'나 '신뢰할 만한 AI' 담론이 윤리세탁을 초래할 수 있음을 경고한다."
+    abstract_en: "This paper argues that the more precisely individual credit can be predicted, the less likely society is to remain a cooperation-based credit society. The true crisis of weak AI is not the black-box problem but the loss of mutual cooperation arising from enhanced individual prediction technology, and that 'Explainable AI' and 'Trustworthy AI' discourses risk ethics-washing."
     paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002912830"
+    cite: 0
     selected: y
+
+  # ─────────────────────── 법교육·교양교육 ──────────────────────────────────
+
+  - title: "학부 교양 교과로서의 법교육"
+    title_en: "Legal Education in Undergraduate GE Courses"
+    authors: "<b>손제연</b>"
+    venue: "법과사회 (Korean Journal of Law & Society)"
+    volume: "No. 72"
+    pages: "pp. 33–73"
+    year: "2023"
+    category: "법교육"
+    keywords: ["자유학문교육", "교양 교육", "학부 법교육", "법학전문대학원"]
+    keywords_en: ["Liberal Education", "General Education", "Law for Undergraduates", "Law School"]
+    abstract: "자유학문적 교육의 의미를 재조명하고, 일정 범주의 법교육이 교양교육의 필수적 일부가 되어야 하는 이유와 그 구체적 운영 방안을 논의한다. 우리 사회에서 자유학문적 교육이 정착되지 못한 이유를 분석하고 법교양 교과의 실례를 제안한다."
+    abstract_en: "This paper reviews the importance of liberal education, proposes why legal education should form an essential part of undergraduate general education, examines the reasons why liberal education has not been satisfactorily established in Korea, and offers a concrete curriculum for legal GE courses."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002937726"
+    cite: 1
+    selected: n
+
+  - title: "대학 신입생의 글쓰기 능력 진단 체제 개발 연구"
+    title_en: "Development of a Writing Ability Diagnosis System for University First-year Students"
+    authors: "민병곤, 오예림, 이성준, 안서현, 김광식, 김명운, <b>손제연</b>, 이주영, 장성민"
+    venue: "리터러시 연구 (The Korean Journal of Literacy Research)"
+    volume: "Vol. 13, No. 6"
+    pages: "pp. 45–76"
+    year: "2022"
+    category: "법교육"
+    keywords: ["대학 글쓰기", "글쓰기 능력 진단", "신입생 글쓰기 평가", "평가 도구 개발"]
+    keywords_en: ["College Writing", "Writing Ability Diagnosis", "First-year Essay Examination", "Test Development"]
+    abstract: "서울대학교 학부 신입생의 글쓰기 능력 평가 도구 개발 연구. 평가 목적·과제·구인·환경 설계, 결과 해석을 위한 준거 설정 및 동등화 연구를 포함하는 체계적 평가 시스템을 구축하였다."
+    abstract_en: "This collaborative study develops a diagnostic writing test for first-year students at Seoul National University, presenting the full system from design through implementation and result interpretation, including standard-setting and equating methodologies."
+    paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002921497"
+    cite: 11
+    selected: n

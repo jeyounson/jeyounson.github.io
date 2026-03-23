@@ -53,45 +53,76 @@ title: Home
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
 
+  <!-- Tab nav: Selected / All -->
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
     <li><div class="button" data-ref="#papers-all">All</div></li>
   </ul>
 
   <div class="tab-content">
+
+    <!-- ── Selected papers ── -->
     <div class="tab-pane active" id="papers-selected">
+
+      <!-- Category filter buttons (JS-powered) -->
+      <div class="pub-filter-bar" id="filter-bar-selected">
+        <span class="filter-btn active" data-cat="all">All</span>
+        {% assign cats_s = site.data.publications.papers | where: "selected","y" | map: "category" | uniq | sort %}
+        {% for c in cats_s %}
+          <span class="filter-btn" data-cat="{{ c }}">{{ c }}</span>
+        {% endfor %}
+      </div>
+
       {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
       {% for paper in selected_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.title_en %}<br/><span style="font-weight:normal; font-size:0.95em; color:#555;">{{ paper.title_en }}</span>{% endif %}
-          </p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">KCI 원문</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+        <div class="paper" data-cat="{{ paper.category }}">
 
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b>
-            {% if paper.title_en %}<br/><span style="font-weight:normal; font-size:0.95em; color:#555;">{{ paper.title_en }}</span>{% endif %}
+          <!-- Meta: year · volume · pages -->
+          <p class="paper-meta">
+            <span class="paper-year">{{ paper.year }}</span>
+            <span class="paper-category cat-{{ paper.category }}">{{ paper.category }}</span>
+            {% if paper.cite and paper.cite > 0 %}
+              <span class="paper-cite"><i class="fa-solid fa-quote-left"></i>{{ paper.cite }}</span>
+            {% endif %}
           </p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          <div class="paper-buttons">
+
+          <!-- Title -->
+          <p class="title">
+            <b>{{ paper.title }}</b>
+            {% if paper.title_en %}
+              <br/><span style="font-weight:normal;font-size:0.93em;color:#666;">{{ paper.title_en }}</span>
+            {% endif %}
+          </p>
+
+          <!-- Authors & venue -->
+          <p style="margin-bottom:2px;">{{ paper.authors }}</p>
+          <p style="margin-bottom:4px;"><i>{{ paper.venue }}</i>{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.pages %}, {{ paper.pages }}{% endif %}</p>
+
+          <!-- Keywords -->
+          {% if paper.keywords_en %}
+            <div class="paper-keywords">
+              {% for kw in paper.keywords_en %}
+                <span class="kw-tag">{{ kw }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <!-- Abstract toggle -->
+          {% if paper.abstract_en %}
+            <a class="abstract-toggle" onclick="toggleAbstract(this)">
+              Abstract <span class="arrow">▼</span>
+            </a>
+            <div class="abstract-body">
+              <span class="lang-en">{{ paper.abstract_en }}</span>
+              {% if paper.abstract %}
+                <hr style="margin:8px 0; border-color:#e8e8e8;">
+                <span class="lang-ko" style="color:#555;">{{ paper.abstract }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          <!-- Buttons -->
+          <div class="paper-buttons" style="margin-top:7px;">
             {% if paper.paper_pdf %}
               <a class="button" href="{{ paper.paper_pdf }}" target="_blank">KCI 원문</a>
             {% endif %}
@@ -102,11 +133,120 @@ title: Home
               <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
             {% endif %}
           </div>
+
         </div>
       {% endfor %}
-    </div>
-  </div>
-</div>
+    </div><!-- /papers-selected -->
+
+    <!-- ── All papers ── -->
+    <div class="tab-pane" id="papers-all">
+
+      <!-- Category filter buttons -->
+      <div class="pub-filter-bar" id="filter-bar-all">
+        <span class="filter-btn active" data-cat="all">All</span>
+        {% assign cats_a = site.data.publications.papers | map: "category" | uniq | sort %}
+        {% for c in cats_a %}
+          <span class="filter-btn" data-cat="{{ c }}">{{ c }}</span>
+        {% endfor %}
+      </div>
+
+      {% for paper in site.data.publications.papers %}
+        <div class="paper" data-cat="{{ paper.category }}">
+
+          <p class="paper-meta">
+            <span class="paper-year">{{ paper.year }}</span>
+            <span class="paper-category cat-{{ paper.category }}">{{ paper.category }}</span>
+            {% if paper.cite and paper.cite > 0 %}
+              <span class="paper-cite"><i class="fa-solid fa-quote-left"></i>{{ paper.cite }}</span>
+            {% endif %}
+          </p>
+
+          <p class="title">
+            <b>{{ paper.title }}</b>
+            {% if paper.title_en %}
+              <br/><span style="font-weight:normal;font-size:0.93em;color:#666;">{{ paper.title_en }}</span>
+            {% endif %}
+          </p>
+
+          <p style="margin-bottom:2px;">{{ paper.authors }}</p>
+          <p style="margin-bottom:4px;"><i>{{ paper.venue }}</i>{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.pages %}, {{ paper.pages }}{% endif %}</p>
+
+          {% if paper.keywords_en %}
+            <div class="paper-keywords">
+              {% for kw in paper.keywords_en %}
+                <span class="kw-tag">{{ kw }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if paper.abstract_en %}
+            <a class="abstract-toggle" onclick="toggleAbstract(this)">
+              Abstract <span class="arrow">▼</span>
+            </a>
+            <div class="abstract-body">
+              <span class="lang-en">{{ paper.abstract_en }}</span>
+              {% if paper.abstract %}
+                <hr style="margin:8px 0; border-color:#e8e8e8;">
+                <span class="lang-ko" style="color:#555;">{{ paper.abstract }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          <div class="paper-buttons" style="margin-top:7px;">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">KCI 원문</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+          </div>
+
+        </div>
+      {% endfor %}
+    </div><!-- /papers-all -->
+
+  </div><!-- /tab-content -->
+</div><!-- /publications -->
+
+<!-- Publications JS: abstract toggle + category filter -->
+<script>
+function toggleAbstract(el) {
+  var body = el.nextElementSibling;
+  var arrow = el.querySelector('.arrow');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    arrow.textContent = '▼';
+  } else {
+    body.classList.add('open');
+    arrow.textContent = '▲';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  ['filter-bar-selected', 'filter-bar-all'].forEach(function(barId) {
+    var bar = document.getElementById(barId);
+    if (!bar) return;
+    var pane = bar.closest('.tab-pane');
+    bar.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        bar.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var cat = btn.getAttribute('data-cat');
+        pane.querySelectorAll('.paper').forEach(function(p) {
+          if (cat === 'all' || p.getAttribute('data-cat') === cat) {
+            p.style.display = '';
+          } else {
+            p.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+});
+</script>
 
 <!-- ========== PROJECTS ==========
   TODO: 프로젝트를 추가할 준비가 되면 아래 주석을 해제하세요.
