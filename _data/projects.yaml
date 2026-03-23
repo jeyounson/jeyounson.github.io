@@ -1,54 +1,21 @@
 projects:
-  - title: "Detecting Network Effects"
-    subtitle: "Randomizing Over Randomized Experiments"
-    thumbnail: "assets/projects/2016_network-ab/thumbnail.jpg"
-    url: "projects/2016_network-ab-testing.html"
-    selected: y
 
-  - title: "Human Atlas"
-    subtitle: "Tool for Mapping Social Networks"
-    thumbnail: "assets/projects/2016_human-atlas/thumbnail.png"
-    url: "projects/2016_human-atlas.html"
-    selected: y
-
-  - title: "Responsive Communities"
-    subtitle: "Pilot project in Jun, Spain"
-    thumbnail: "assets/projects/2015_jun/thumbnail.png"
-    url: "projects/2015_jun.html"
-    selected: y
-
-  - title: "Cold-Start Recommendations"
-    subtitle: "Learning Local Collective Embeddings"
-    thumbnail: "assets/projects/2014_item-cold-start/thumbnail.jpg"
-    url: "projects/2014_item-cold-start.html"
-    selected: n
-
-  - title: "Semi-supervised Learning"
-    subtitle: "Iterative Hybrid Algorithm"
-    thumbnail: "assets/projects/2013_iterative-hybrid-algorithm/thumbnail.jpg"
-    url: "projects/2013_iterative-hybrid-algorithm.html"
-    selected: n
-
-  - title: "Twitter Sentiment Analysis"
-    subtitle: "Analyzing Financial Tweets"
-    thumbnail: "assets/projects/2011_twitter-sentiment-analysis/thumbnail.png"
-    url: "projects/2011_twitter-sentiment-analysis.html"
-    selected: n
-
-  - title: "Wordnet Construction"
-    subtitle: "Automatic Wordnet Construction using Language Models"
-    thumbnail: "assets/projects/2010_wordnet-construction/thumbnail.jpg"
-    url: "projects/2010_wordnet-contruction.html"
-    selected: n
-
-  - title: "Fingerprint Verification"
-    subtitle: "Image processing class project"
-    thumbnail: "assets/projects/2010_fingerprint-verification/thumbnail.png"
-    url: "projects/2010_fingerprint-verification.html"
-    selected: n
-
-  - title: "Connect Four AI Agent"
-    subtitle: "Iterative deepening and alpha-beta pruning"
-    thumbnail: "assets/projects/2009_connect-four/thumbnail.png"
-    url: "projects/2009_connect-four.html"
-    selected: n
+  # ──────────────────────────────────────────────────────────────────────────
+  # TODO: 아래 예시 형식에 맞춰 프로젝트를 추가하세요.
+  #
+  # 필수 항목:
+  #   title     : 프로젝트 제목
+  #   subtitle  : 한 줄 설명
+  #   thumbnail : 썸네일 이미지 경로  (예: assets/projects/2025_my-project/thumbnail.jpg)
+  #   url       : 프로젝트 상세 페이지 경로 또는 외부 URL
+  #   selected  : 메인 화면에 표시할 경우 "y", 숨길 경우 "n"
+  #
+  # 예시 (주석 해제 후 내용 교체):
+  #
+  # - title: "프로젝트 제목을 입력하세요"
+  #   subtitle: "한 줄 부제목"
+  #   thumbnail: "assets/projects/YYYY_project-slug/thumbnail.jpg"
+  #   url: "projects/YYYY_project-slug.html"
+  #   selected: y
+  #
+  # ──────────────────────────────────────────────────────────────────────────
