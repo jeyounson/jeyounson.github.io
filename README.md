@@ -1,4 +1,4 @@
-# Martin Saveski's Website
+# Jeyoun Son's Website
 
 ## Updates guide
 Change one of the files in `_data`, unless you are changing the look of the website.
@@ -18,6 +18,18 @@ mkdir public_html
 ```
 
 More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
+
+## ORCID workflow
+
+This repo includes a lightweight BibTeX-to-ORCID helper for personal ORCID accounts:
+
+```bash
+python3 scripts/orcid_sync.py /path/to/KCI_bibtex.bib
+```
+
+It generates reviewable JSON, a manual-entry checklist, and a tracking CSV under `orcid/`.
+
+See [`orcid/README.md`](/Users/jeyounson/jeyounson.github.io/orcid/README.md) for details.
 
 **Stanford links**
 - Use fetch!
