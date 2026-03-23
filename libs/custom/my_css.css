@@ -75,6 +75,22 @@ h4 {
 .header-social a:hover {
   color: #2e5090;
 }
+/* Social brand colors */
+.header-social a[aria-label="Facebook"],
+.footer-social a[aria-label="Facebook"] { color: #1877F2; }
+.header-social a[aria-label="Facebook"]:hover,
+.footer-social a[aria-label="Facebook"]:hover { color: #0d5bba; }
+.header-social a[aria-label="YouTube"],
+.footer-social a[aria-label="YouTube"] { color: #FF0000; }
+.header-social a[aria-label="YouTube"]:hover,
+.footer-social a[aria-label="YouTube"]:hover { color: #cc0000; }
+/* Tistory SVG icon sizing */
+.header-social a[aria-label="Tistory"] svg,
+.footer-social a[aria-label="Tistory"] svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+}
 
 /* ── Paper buttons ── */
 .paper {
@@ -221,6 +237,7 @@ h4 {
 .paper-category.cat-칸트     { background: #c47d3e; }
 .paper-category.cat-AI\ 윤리 { background: #c0392b; }
 .paper-category.cat-법교육   { background: #2e86ab; }
+.paper-category.cat-글쓰기   { background: #2d8a6c; }
 
 /* citation badge */
 .paper-cite {

@@ -82,7 +82,7 @@
           <h1>{{ site.data.main_info.name }}</h1>
           <p class="header-title">{{ site.data.main_info.title }}</p>
           <p class="header-affiliation">{{ site.data.main_info.affiliation }}</p>
-          <p class="header-email">{{ site.data.main_info.email }}</p>
+          <p class="header-email"><a href="mailto:{{ site.data.main_info.email }}" style="color:inherit;text-decoration:none;">{{ site.data.main_info.email }}</a></p>
 
           <!-- Social icons – proper <a href> for accessibility & middle-click -->
           <p class="header-social">
@@ -100,8 +100,11 @@
             {% endif %}
 
             {% if site.data.main_info.blog %}
-            <a href="{{ site.data.main_info.blog }}" target="_blank" rel="noopener" aria-label="Blog">
-              <i class="fa-solid fa-blog fa-lg"></i>
+            <a href="{{ site.data.main_info.blog }}" target="_blank" rel="noopener" aria-label="Tistory">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:-0.1em;">
+                <rect width="24" height="24" rx="5" fill="#FF6200"/>
+                <path d="M4,6 H20 V10 H14 V18 H10 V10 H4 Z" fill="white"/>
+              </svg>
             </a>
             {% endif %}
 
@@ -154,7 +157,7 @@
           {{ site.data.main_info.name }}
         </div>
         <div class="four columns">
-          {{ site.data.main_info.email }}
+          <a href="mailto:{{ site.data.main_info.email }}" style="color:inherit;">{{ site.data.main_info.email }}</a>
         </div>
         <div class="four columns footer-social">
 
@@ -171,8 +174,11 @@
           {% endif %}
 
           {% if site.data.main_info.blog %}
-          <a href="{{ site.data.main_info.blog }}" target="_blank" rel="noopener" aria-label="Blog">
-            <i class="fa-solid fa-blog"></i>
+          <a href="{{ site.data.main_info.blog }}" target="_blank" rel="noopener" aria-label="Tistory">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:-0.1em;">
+              <rect width="24" height="24" rx="5" fill="#FF6200"/>
+              <path d="M4,6 H20 V10 H14 V18 H10 V10 H4 Z" fill="white"/>
+            </svg>
           </a>
           {% endif %}
 
@@ -191,6 +197,12 @@
           {% if site.data.main_info.google_scholar %}
           <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">
             <i class="ai ai-google-scholar"></i>
+          </a>
+          {% endif %}
+
+          {% if site.data.main_info.orcid %}
+          <a href="{{ site.data.main_info.orcid }}" target="_blank" rel="noopener" aria-label="ORCID">
+            <i class="ai ai-orcid"></i>
           </a>
           {% endif %}
 
