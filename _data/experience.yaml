@@ -1,7 +1,13 @@
 experiences:
 
 - place: "Seoul National University"
-  time: "2023 - now"
+  time: "2025 - now"
+  title: "Teaching Associate Professor"
+  subtitle: "SNU College"
+  category: "work"
+
+- place: "Seoul National University"
+  time: "2023 - 2025"
   title: "Teaching Associate Professor"
   subtitle: "Faculty of Liberal Education"
   category: "work"
