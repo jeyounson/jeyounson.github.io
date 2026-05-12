@@ -141,7 +141,10 @@ title: Home
           <!-- Buttons -->
           <div class="paper-buttons" style="margin-top:7px;">
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">KCI 원문</a>
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
+            {% endif %}
+            {% if paper.paper_html %}
+              <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank">{{ paper.paper_html_label | default: "HTML" }}</a>
             {% endif %}
             {% if paper.slides %}
               <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
@@ -211,7 +214,10 @@ title: Home
 
           <div class="paper-buttons" style="margin-top:7px;">
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">KCI 원문</a>
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
+            {% endif %}
+            {% if paper.paper_html %}
+              <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank">{{ paper.paper_html_label | default: "HTML" }}</a>
             {% endif %}
             {% if paper.slides %}
               <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>

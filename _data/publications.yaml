@@ -2,6 +2,27 @@ papers:
 
   # ──────────────────────────── 법이론·법실증주의 ─────────────────────────────
 
+  - title: "법적 행위와 법적 행위자: 해석적 수렴, 제도적 역할, 그리고 법적 실천의 구조"
+    title_en: "Legal Acts and Legal Agents: Interpretive Convergence, Institutional Roles, and the Structure of Legal Practice"
+    authors: "<b>손제연</b>"
+    venue: "법철학연구 (Korean Journal of Legal Philosophy)"
+    volume: "Vol. 29, No. 1"
+    pages: "pp. 35–87"
+    year: "2026"
+    category: "법이론"
+    keywords: ["해석적 수렴", "법적 행위", "법적 행위자", "법적 화행적수인", "사법적 권위"]
+    keywords_en: ["Interpretive Convergence", "Legal Acts", "Legal Agents", "Legal Uptake", "Judicial Authority"]
+    abstract: >-
+      입법부가 법률을 제정하고, 법원이 그 의미를 해석하며, 행정기관이 이를 집행하고, 시민과 기업이 법적 자료에 기대어 행위를 계획하고 권리를 주장하는 법질서는 서로 다른 많은 행위자들의 산출과 응답으로 이루어진다. 본 논문은 그러한 법질서가 어떻게 하나의 공통된 규범적 실천으로 기능할 수 있는지를 법적 행위, 법적 행위자, 그리고 법적 화행적수인-응답의 관계를 통해 해명한다. 법적 행위가 안정적인 공적 규범으로 기능하기 위해서는 일반성(G), 공유가능성(S), 초점점 안정성(F)을 충족해야 하며, 법적 의미의 객관성은 공적 이유 제시, 역할-구속적 판단, 제도적 심사와 교정, 선례적 안정화 속에서 형성되고 유지되는 실천-매개적 법적 객관성으로 이해된다. 이러한 틀은 사법적 권위를 자기정초적 권위가 아니라 후속적 화행적수인과 응답을 통해 매개되고 획득되는 권위로 재구성한다.
+    abstract_en: >-
+      A legal order is produced and sustained by many different actors: legislatures enact statutes, courts interpret them, administrative agencies implement them, and citizens and firms plan their conduct and assert rights by relying on legal materials. This article addresses how such a dispersed practice can nevertheless function as a common normative order by analyzing the internal structure of legal practice, especially the relation between legal acts, legal agents, and legal uptake-and-response. It argues that for a legal act to function as a stable public norm, it must satisfy three felicity constraints: Generality, Shareability, and Focal-point Stability. The article then reconceptualizes legislatures, executive officials, courts, citizens, and other legal subjects as differentiated legal agents participating in interpretive convergence. On this view, judicial authority is earned and mediated rather than self-authenticating, and familiar puzzles about judicial supremacy, hard cases, and activism are reframed as questions about how far particular decisions satisfy the G–S–F constraints under professional norms, precedential practices, reason-giving requirements, and structures of review.
+    paper_pdf: "https://doi.org/10.22286/kjlp.2026.29.1.002"
+    paper_pdf_label: "DOI"
+    paper_html: "/assets/publications/legal-acts-agents-en/"
+    paper_html_label: "English HTML"
+    cite: 0
+    selected: y
+
   - title: "법의 해석적 수렴 이론"
     title_en: "The Interpretive Convergence Theory of Law"
     authors: "<b>손제연</b>"
