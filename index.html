@@ -140,6 +140,9 @@ title: Home
 
           <!-- Buttons -->
           <div class="paper-buttons" style="margin-top:7px;">
+            {% if paper.paper_doi %}
+              <a class="button" href="{{ paper.paper_doi }}" target="_blank">{{ paper.paper_doi_label | default: "DOI" }}</a>
+            {% endif %}
             {% if paper.paper_pdf %}
               <a class="button" href="{{ paper.paper_pdf }}" target="_blank">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
             {% endif %}
@@ -213,6 +216,9 @@ title: Home
           {% endif %}
 
           <div class="paper-buttons" style="margin-top:7px;">
+            {% if paper.paper_doi %}
+              <a class="button" href="{{ paper.paper_doi }}" target="_blank">{{ paper.paper_doi_label | default: "DOI" }}</a>
+            {% endif %}
             {% if paper.paper_pdf %}
               <a class="button" href="{{ paper.paper_pdf }}" target="_blank">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
             {% endif %}
