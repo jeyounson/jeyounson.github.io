@@ -1,0 +1,36 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ "/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{{ "/research/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ "/research/interpretive-convergence/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ "/research/human-dignity-and-law/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ "/research/judicial-authority/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ "/assets/publications/legal-acts-agents-en/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>

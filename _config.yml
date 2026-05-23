@@ -1,6 +1,7 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
+url: "https://jeyounson.github.io"
 # baseurl: /msaveski
 
 collections:

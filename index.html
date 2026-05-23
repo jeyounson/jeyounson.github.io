@@ -1,6 +1,14 @@
 ---
 layout: default
 title: Home
+description: "Jeyoun Son is a legal philosopher at SNU College working on legal normativity, human dignity, interpretive convergence, judicial authority, distributive justice, and AI ethics."
+keywords:
+  - legal philosophy
+  - jurisprudence
+  - human dignity
+  - interpretive convergence
+  - judicial authority
+  - AI ethics
 ---
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
@@ -35,6 +43,54 @@ title: Home
     <span class="ri-chip ri-ai">AI Ethics</span>
     <span class="ri-chip ri-education">Liberal &amp; Legal Education</span>
     <span class="ri-chip ri-normativity">Legal Normativity</span>
+  </div>
+</div>
+
+<!-- ========== RESEARCH KNOWLEDGE SURFACES ========== -->
+<div class="docs-section" id="research">
+  <h4>Research Knowledge Surfaces</h4>
+  <div class="knowledge-hero">
+    <p class="surface-meta">Stable public entry points</p>
+    <h3>Readable paths into the research program</h3>
+    <p>
+      These pages collect short, stable explanations of my major research
+      lines. They are designed to help readers, collaborators, search engines,
+      and AI systems identify the central question, status, publication links,
+      and conceptual context of each project.
+    </p>
+    <a class="button" href="{{ "/research/" | prepend: site.baseurl }}">Open all research surfaces</a>
+  </div>
+
+  <div class="surface-grid">
+    <div class="surface-card">
+      <p class="surface-meta">Published article series</p>
+      <h5>Interpretive Convergence</h5>
+      <p>
+        Legal meaning, legal acts, legal agents, uptake, and practice-mediated
+        legal objectivity.
+      </p>
+      <a class="button" href="{{ "/research/interpretive-convergence/" | prepend: site.baseurl }}">Research context</a>
+    </div>
+
+    <div class="surface-card">
+      <p class="surface-meta">Book project</p>
+      <h5>Human Dignity and Law</h5>
+      <p>
+        Human dignity as legal status, answerability, rights, duties, and
+        robust legality.
+      </p>
+      <a class="button" href="{{ "/research/human-dignity-and-law/" | prepend: site.baseurl }}">Research context</a>
+    </div>
+
+    <div class="surface-card">
+      <p class="surface-meta">Judicial reform</p>
+      <h5>Judicial Authority and Institutional Legitimacy</h5>
+      <p>
+        Courts, finality, constitutional review, institutional role, and Korean
+        judicial-reform debates.
+      </p>
+      <a class="button" href="{{ "/research/judicial-authority/" | prepend: site.baseurl }}">Research context</a>
+    </div>
   </div>
 </div>
 
@@ -141,19 +197,22 @@ title: Home
           <!-- Buttons -->
           <div class="paper-buttons" style="margin-top:7px;">
             {% if paper.paper_doi %}
-              <a class="button" href="{{ paper.paper_doi }}" target="_blank">{{ paper.paper_doi_label | default: "DOI" }}</a>
+              <a class="button" href="{{ paper.paper_doi }}" target="_blank" rel="noopener">{{ paper.paper_doi_label | default: "DOI" }}</a>
             {% endif %}
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
             {% endif %}
             {% if paper.paper_html %}
-              <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank">{{ paper.paper_html_label | default: "HTML" }}</a>
+              <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank" rel="noopener">{{ paper.paper_html_label | default: "HTML" }}</a>
+            {% endif %}
+            {% if paper.research_page %}
+              <a class="button" href="{{ paper.research_page | prepend: site.baseurl }}">Research Context</a>
             {% endif %}
             {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank" rel="noopener">Slides</a>
             {% endif %}
             {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              <a class="button" href="{{ paper.video }}" target="_blank" rel="noopener">Video</a>
             {% endif %}
           </div>
 
@@ -217,19 +276,22 @@ title: Home
 
           <div class="paper-buttons" style="margin-top:7px;">
             {% if paper.paper_doi %}
-              <a class="button" href="{{ paper.paper_doi }}" target="_blank">{{ paper.paper_doi_label | default: "DOI" }}</a>
+              <a class="button" href="{{ paper.paper_doi }}" target="_blank" rel="noopener">{{ paper.paper_doi_label | default: "DOI" }}</a>
             {% endif %}
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
             {% endif %}
             {% if paper.paper_html %}
-              <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank">{{ paper.paper_html_label | default: "HTML" }}</a>
+              <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank" rel="noopener">{{ paper.paper_html_label | default: "HTML" }}</a>
+            {% endif %}
+            {% if paper.research_page %}
+              <a class="button" href="{{ paper.research_page | prepend: site.baseurl }}">Research Context</a>
             {% endif %}
             {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank" rel="noopener">Slides</a>
             {% endif %}
             {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              <a class="button" href="{{ paper.video }}" target="_blank" rel="noopener">Video</a>
             {% endif %}
           </div>
 
@@ -360,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="docs-section" id="resume">
   <h4>Vitæ</h4>
   
-  <p>Full CV in <a href="{{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }}" target="_blank">PDF</a>.</p>
+  <p>Full CV in <a href="{{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }}" target="_blank" rel="noopener">PDF</a>.</p>
 
   <!-- The Timeline -->
   <ul class="timeline">

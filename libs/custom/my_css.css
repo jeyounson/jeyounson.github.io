@@ -6,6 +6,11 @@
    ===================================================================== */
 
 /* ── Global ── */
+html,
+body {
+  background: #fff;
+}
+
 h4 {
   letter-spacing: .06rem;
   font-weight: 600;
@@ -193,6 +198,85 @@ h4 {
 .ri-ai            { background: #a03030; }
 .ri-education     { background: #1a6690; }
 .ri-normativity   { background: #5a6e8a; }
+
+/* ── Public knowledge surfaces ── */
+.knowledge-hero {
+  border: 1px solid #dbe4f2;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f7f9fd 0%, #eef4fb 100%);
+  padding: 24px 26px;
+  margin: 0 0 24px 0;
+}
+.knowledge-hero h3 {
+  margin-bottom: 8px;
+  color: #18345f;
+}
+.knowledge-hero p {
+  font-size: 1.45rem;
+  line-height: 1.65;
+  color: #333;
+}
+.surface-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 14px;
+}
+.surface-card {
+  border: 1px solid #e4e8ef;
+  border-radius: 8px;
+  padding: 18px 18px 16px 18px;
+  background: #fff;
+  box-shadow: 0 1px 8px rgba(30, 58, 110, 0.05);
+}
+.surface-card h5 {
+  margin-bottom: 6px;
+  color: #1e3a6e;
+}
+.surface-card p {
+  margin-bottom: 9px;
+  color: #444;
+}
+.surface-meta {
+  color: #777;
+  font-size: 1.15rem;
+  letter-spacing: .02rem;
+  text-transform: uppercase;
+}
+.surface-card .button,
+.knowledge-hero .button,
+.surface-actions .button {
+  display: inline-block;
+  height: 28px;
+  padding: 0 15px;
+  line-height: 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
+  border-color: #2e5090;
+  color: #2e5090;
+}
+.surface-card .button:hover,
+.knowledge-hero .button:hover,
+.surface-actions .button:hover {
+  background: #2e5090;
+  color: #fff;
+}
+.surface-note {
+  border-left: 3px solid #2e5090;
+  background: #f8fafc;
+  padding: 10px 14px;
+  color: #444;
+}
+.surface-list {
+  margin-left: 1.7rem;
+}
+.surface-list li {
+  margin-bottom: 7px;
+}
+.surface-actions {
+  margin-top: 12px;
+}
 
 /*  ================ Publications – enhanced styling  ================ */
 
@@ -460,6 +544,12 @@ h4 {
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #2e5090; }
+}
+
+@media (min-width: 750px) {
+  .surface-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ── Timeline: military category (centre-right, muted) ── */

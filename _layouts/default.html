@@ -1,18 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+{% if page.description %}
+{% assign page_description = page.description %}
+{% else %}
+{% assign page_description = site.data.main_info.title | append: ", " | append: site.data.main_info.affiliation %}
+{% endif %}
+{% assign page_canonical_url = page.canonical_url | default: page.url | absolute_url %}
+{% assign page_og_type = page.og_type | default: "website" %}
+{% assign page_schema_type = page.schema_type | default: "WebPage" %}
+{% assign page_lang = page.lang | default: "en" %}
+<html lang="{{ page_lang }}">
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="{{ site.data.main_info.name }} – {{ site.data.main_info.title }}, {{ site.data.main_info.affiliation }}">
+  <meta name="description" content="{{ page_description | strip_newlines | escape }}">
   <meta name="author" content="{{ site.data.main_info.name }}">
-  <meta property="og:title" content="{{ site.data.main_info.name }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jeyounson.github.io/" />
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+  {% endif %}
+  <meta property="og:title" content="{{ page.title | default: site.data.main_info.name | escape }}" />
+  <meta property="og:description" content="{{ page_description | strip_newlines | escape }}" />
+  <meta property="og:type" content="{{ page_og_type }}" />
+  <meta property="og:url" content="{{ page_canonical_url }}" />
   <meta property="og:site_name" content="{{ site.data.main_info.name }}" />
-  <link rel="canonical" href="https://jeyounson.github.io/" />
+  <link rel="canonical" href="{{ page_canonical_url }}" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": {{ page_schema_type | jsonify }},
+    "name": {{ page.title | default: site.data.main_info.name | jsonify }},
+    "url": {{ page_canonical_url | jsonify }},
+    "description": {{ page_description | strip_newlines | jsonify }},
+    "inLanguage": {{ page_lang | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": {{ site.data.main_info.name | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "sameAs": [
+        {{ site.data.main_info.orcid | jsonify }}{% if site.data.main_info.youtube %},
+        {{ site.data.main_info.youtube | jsonify }}{% endif %}{% if site.data.main_info.blog %},
+        {{ site.data.main_info.blog | jsonify }}{% endif %}
+      ]
+    }
+  }
+  </script>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -143,6 +177,7 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href="{{ "/index.html#bio" | prepend: site.baseurl }}">Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ "/research/" | prepend: site.baseurl }}">Research</a></li>
           <li class="navbar-item"><a class="navbar-link" href="{{ "/index.html#publications" | prepend: site.baseurl }}">Publications</a></li>
           <li class="navbar-item"><a class="navbar-link" href="{{ "/index.html#resume" | prepend: site.baseurl }}">Vitæ</a></li>
         </ul>
