@@ -70,6 +70,7 @@ Minimum default for a publication page:
 
 - stable canonical URL
 - visible `Publication and Citation` box near the top of the page
+- suggested citation for the public English access edition, when one exists
 - version-of-record citation, DOI, and journal/KCI link where available
 - clear version note for an English translation, author manuscript, HTML
   reading version, or PDF
@@ -86,6 +87,15 @@ Boundary rule: do not imply that an English translation or local HTML copy is
 the version of record unless it actually is. The public page should make the
 formal citation target explicit and should expose only materials that may be
 publicly posted.
+
+English access-edition rule: for Korean-language scholarship whose likely
+international readers have limited access to Korean, do not frame the English
+translation as something to cite only in the narrow case of discussing
+translation wording. Make the translation as complete, stable, and
+edition-like as possible, and invite citation to the English access edition for
+ordinary international scholarly discussion. The recommended citation should
+still identify the Korean version of record and DOI, so that generous English
+citation does not erase the formal publication record.
 
 Before pushing citation-surface changes:
 
