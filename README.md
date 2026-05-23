@@ -38,15 +38,15 @@ It generates reviewable JSON, a manual-entry checklist, and a tracking CSV under
 
 See [`orcid/README.md`](/Users/jeyounson/jeyounson.github.io/orcid/README.md) for details.
 
-## Public knowledge surface workflow
+## Research page workflow
 
-Use this site as the canonical public-facing research surface for work that is
-ready to be explained publicly.
+Use this site as the canonical public-facing research page for work that is
+ready to be described publicly.
 
 - Put stable public research entry points under `research/<slug>/`.
 - Keep publication metadata in `_data/publications.yaml`.
 - Add a `research_page` field to a publication when a paper belongs to a larger
-  research surface.
+  research page.
 - Keep the full manuscript authority in the relevant writing repository; this
   site should explain the work and link to the published or permitted public
   versions.
