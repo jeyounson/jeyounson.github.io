@@ -22,7 +22,7 @@ papers:
     paper_pdf: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003336278"
     paper_pdf_label: "KCI 원문"
     paper_html: "/assets/publications/legal-acts-agents-en/"
-    paper_html_label: "English HTML"
+    paper_html_label: "English translation"
     research_page: "/research/interpretive-convergence/"
     cite: 0
     selected: y
