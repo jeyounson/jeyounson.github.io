@@ -142,106 +142,12 @@ keywords:
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
   {% assign papers_all = site.data.publications.papers %}
-  {% assign selected_papers = papers_all | where: "selected", "y" %}
   <p class="surface-note">
-    The default list is the full KCI-linked website inventory. Selected highlights are a shorter
-    research-facing view, not the complete publication record.
+    This is the full KCI-linked website inventory. Curated emphasis is handled by research
+    pages and access-edition priorities, not by hiding publications from this list.
   </p>
 
-  <!-- Tab nav: All / Selected -->
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-all">All publications ({{ papers_all | size }})</div></li>
-    <li><div class="button" data-ref="#papers-selected">Selected highlights ({{ selected_papers | size }})</div></li>
-  </ul>
-
   <div class="tab-content">
-
-    <!-- ── Selected papers ── -->
-    <div class="tab-pane" id="papers-selected">
-
-      <!-- Category filter buttons (JS-powered) -->
-      <div class="pub-filter-bar" id="filter-bar-selected">
-        <span class="filter-btn active" data-cat="all">All</span>
-        {% assign cats_s = selected_papers | map: "category" | uniq | sort %}
-        {% for c in cats_s %}
-          <span class="filter-btn" data-cat="{{ c }}">{{ c }}</span>
-        {% endfor %}
-      </div>
-
-      {% for paper in selected_papers %}
-        <div class="paper" data-cat="{{ paper.category }}">
-
-          <!-- Meta: year · volume · pages -->
-          <p class="paper-meta">
-            <span class="paper-year">{{ paper.year }}</span>
-            <span class="paper-category cat-{{ paper.category }}">{{ paper.category }}</span>
-            {% if paper.cite and paper.cite > 0 %}
-              <span class="paper-cite"><i class="fa-solid fa-quote-left"></i>{{ paper.cite }}</span>
-            {% endif %}
-          </p>
-
-          <!-- Title -->
-          <p class="title">
-            <b>{{ paper.title }}</b>
-            {% if paper.title_en %}
-              <br/><span style="font-weight:normal;font-size:0.93em;color:#666;">{{ paper.title_en }}</span>
-            {% endif %}
-          </p>
-
-          <!-- Authors & venue -->
-          <p style="margin-bottom:2px;">{{ paper.authors }}</p>
-          <p style="margin-bottom:4px;"><i>{{ paper.venue }}</i>{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.pages %}, {{ paper.pages }}{% endif %}</p>
-
-          <!-- Keywords -->
-          {% if paper.keywords_en %}
-            <div class="paper-keywords">
-              {% for kw in paper.keywords_en %}
-                <span class="kw-tag">{{ kw }}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
-
-          <!-- Abstract toggle -->
-          {% if paper.abstract_en %}
-            <a class="abstract-toggle" onclick="toggleAbstract(this)">
-              Abstract <span class="arrow">▼</span>
-            </a>
-            <div class="abstract-body">
-              <span class="lang-en">{{ paper.abstract_en }}</span>
-              {% if paper.abstract %}
-                <hr style="margin:8px 0; border-color:#e8e8e8;">
-                <span class="lang-ko" style="color:#555;">{{ paper.abstract }}</span>
-              {% endif %}
-            </div>
-          {% endif %}
-
-          <!-- Buttons -->
-          <div class="paper-buttons" style="margin-top:7px;">
-            {% if paper.paper_doi %}
-              <a class="button" href="{{ paper.paper_doi }}" target="_blank" rel="noopener">{{ paper.paper_doi_label | default: "DOI" }}</a>
-            {% endif %}
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">{{ paper.paper_pdf_label | default: "KCI 원문" }}</a>
-            {% endif %}
-            {% if paper.paper_html %}
-              <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank" rel="noopener">{{ paper.paper_html_label | default: "HTML" }}</a>
-            {% endif %}
-            {% if paper.research_page %}
-              <a class="button" href="{{ paper.research_page | prepend: site.baseurl }}">Research context</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank" rel="noopener">Slides</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank" rel="noopener">Video</a>
-            {% endif %}
-          </div>
-
-        </div>
-      {% endfor %}
-    </div><!-- /papers-selected -->
-
-    <!-- ── All papers ── -->
     <div class="tab-pane active" id="papers-all">
 
       <!-- Category filter buttons -->
@@ -338,10 +244,9 @@ function toggleAbstract(el) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  ['filter-bar-selected', 'filter-bar-all'].forEach(function(barId) {
-    var bar = document.getElementById(barId);
-    if (!bar) return;
-    var pane = bar.closest('.tab-pane');
+  document.querySelectorAll('.pub-filter-bar').forEach(function(bar) {
+    var pane = bar.closest('.tab-pane') || bar.closest('.docs-section');
+    if (!pane) return;
     bar.querySelectorAll('.filter-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         bar.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });

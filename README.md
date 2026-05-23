@@ -105,9 +105,10 @@ KCI-wide backlog rule: do not treat this as a one-off rule for the current
 `legal-acts-agents-en` page. All major KCI-published articles should eventually
 receive at least a publication-specific citation shell, and the high-priority
 articles should receive full English access editions or Korean-English parallel
-editions. The homepage `Selected highlights` tab is not the complete record;
-use `All publications` and the workspace KCI audit plan as the completeness
-baseline.
+editions. The homepage publication section intentionally does not maintain a
+`Selected` subset; use the full publication inventory, topic/category filters,
+research pages, and the workspace KCI audit plan as the curation and
+completeness baseline.
 
 Before pushing citation-surface changes:
 
