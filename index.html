@@ -141,28 +141,33 @@ keywords:
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
+  {% assign papers_all = site.data.publications.papers %}
+  {% assign selected_papers = papers_all | where: "selected", "y" %}
+  <p class="surface-note">
+    The default list is the full KCI-linked website inventory. Selected highlights are a shorter
+    research-facing view, not the complete publication record.
+  </p>
 
-  <!-- Tab nav: Selected / All -->
+  <!-- Tab nav: All / Selected -->
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
+    <li><div class="button active" data-ref="#papers-all">All publications ({{ papers_all | size }})</div></li>
+    <li><div class="button" data-ref="#papers-selected">Selected highlights ({{ selected_papers | size }})</div></li>
   </ul>
 
   <div class="tab-content">
 
     <!-- ── Selected papers ── -->
-    <div class="tab-pane active" id="papers-selected">
+    <div class="tab-pane" id="papers-selected">
 
       <!-- Category filter buttons (JS-powered) -->
       <div class="pub-filter-bar" id="filter-bar-selected">
         <span class="filter-btn active" data-cat="all">All</span>
-        {% assign cats_s = site.data.publications.papers | where: "selected","y" | map: "category" | uniq | sort %}
+        {% assign cats_s = selected_papers | map: "category" | uniq | sort %}
         {% for c in cats_s %}
           <span class="filter-btn" data-cat="{{ c }}">{{ c }}</span>
         {% endfor %}
       </div>
 
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
       {% for paper in selected_papers %}
         <div class="paper" data-cat="{{ paper.category }}">
 
@@ -237,18 +242,18 @@ keywords:
     </div><!-- /papers-selected -->
 
     <!-- ── All papers ── -->
-    <div class="tab-pane" id="papers-all">
+    <div class="tab-pane active" id="papers-all">
 
       <!-- Category filter buttons -->
       <div class="pub-filter-bar" id="filter-bar-all">
         <span class="filter-btn active" data-cat="all">All</span>
-        {% assign cats_a = site.data.publications.papers | map: "category" | uniq | sort %}
+        {% assign cats_a = papers_all | map: "category" | uniq | sort %}
         {% for c in cats_a %}
           <span class="filter-btn" data-cat="{{ c }}">{{ c }}</span>
         {% endfor %}
       </div>
 
-      {% for paper in site.data.publications.papers %}
+      {% for paper in papers_all %}
         <div class="paper" data-cat="{{ paper.category }}">
 
           <p class="paper-meta">

@@ -101,6 +101,14 @@ author-prepared English access edition is not the journal's version of record
 and that the Korean version controls for definitive wording, pagination, formal
 indexing, and Korean-language legal scholarship.
 
+KCI-wide backlog rule: do not treat this as a one-off rule for the current
+`legal-acts-agents-en` page. All major KCI-published articles should eventually
+receive at least a publication-specific citation shell, and the high-priority
+articles should receive full English access editions or Korean-English parallel
+editions. The homepage `Selected highlights` tab is not the complete record;
+use `All publications` and the workspace KCI audit plan as the completeness
+baseline.
+
 Before pushing citation-surface changes:
 
 - rebuild locally with the Ruby 3.3 Jekyll command above
