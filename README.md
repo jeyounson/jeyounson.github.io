@@ -95,7 +95,11 @@ translation wording. Make the translation as complete, stable, and
 edition-like as possible, and invite citation to the English access edition for
 ordinary international scholarly discussion. The recommended citation should
 still identify the Korean version of record and DOI, so that generous English
-citation does not erase the formal publication record.
+citation does not erase the formal publication record. Use a non-defensive
+control clause rather than self-undermining language: say that the
+author-prepared English access edition is not the journal's version of record
+and that the Korean version controls for definitive wording, pagination, formal
+indexing, and Korean-language legal scholarship.
 
 Before pushing citation-surface changes:
 
