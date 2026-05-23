@@ -24,9 +24,19 @@ layout: null
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>{{ "/research/attention-and-justice/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>{{ "/research/reliable-ai-risk-sharing/" | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>{{ "/research/judicial-authority/" | absolute_url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>{{ "/assets/publications/legal-acts-agents-en/" | absolute_url }}</loc>

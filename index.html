@@ -1,13 +1,15 @@
 ---
 layout: default
 title: Home
-description: "Jeyoun Son is a legal philosopher at SNU College working on legal normativity, human dignity, interpretive convergence, judicial authority, distributive justice, and AI ethics."
+description: "Jeyoun Son is a legal philosopher at SNU College working on legal normativity, human dignity, interpretive convergence, attentional justice, reliable AI, risk-sharing cooperation, distributive justice, and AI ethics."
 keywords:
   - legal philosophy
   - jurisprudence
   - human dignity
   - interpretive convergence
-  - judicial authority
+  - attentional justice
+  - reliable AI
+  - risk-sharing cooperation
   - AI ethics
 ---
 <!-- ========== BIO ========== -->
@@ -18,8 +20,10 @@ keywords:
     the foundations of <b>legal normativity</b>, <b>human dignity</b>, and <b>distributive justice</b>.
     My recent work develops an emergentist account of how legal norms arise through
     interpretive convergence within a community—an alternative to both legal positivism
-    and moral interpretivism. I also write on the Radbruch Formula and legal validity,
-    Lon Fuller’s legal theory, legal expressivism, and the ethics of weak AI.
+    and moral interpretivism. I also develop work on attentional justice, platform-mediated
+    attention capture, and the way reliable predictive AI can erode risk-sharing
+    cooperation. I also write on the Radbruch Formula and legal validity, Lon
+    Fuller’s legal theory, legal expressivism, and the ethics of weak AI.
   </p>
   <p>
     I hold a Ph.D. in Law (legal philosophy, Seoul National University), an M.A. in
@@ -38,9 +42,10 @@ keywords:
     <span class="ri-chip ri-jurisprudence">Legal Theory &amp; Jurisprudence</span>
     <span class="ri-chip ri-dignity">Human Dignity</span>
     <span class="ri-chip ri-justice">Distributive Justice</span>
+    <span class="ri-chip ri-ai">Attentional Justice</span>
     <span class="ri-chip ri-kant">Kantian Legal Philosophy</span>
     <span class="ri-chip ri-expressivism">Legal Expressivism</span>
-    <span class="ri-chip ri-ai">AI Ethics</span>
+    <span class="ri-chip ri-ai">Reliable AI &amp; Risk-Sharing</span>
     <span class="ri-chip ri-education">Liberal &amp; Legal Education</span>
     <span class="ri-chip ri-normativity">Legal Normativity</span>
   </div>
@@ -51,12 +56,13 @@ keywords:
   <h4>Research</h4>
   <div class="knowledge-hero">
     <p class="surface-meta">Selected research areas</p>
-    <h3>Legal philosophy, public reason, and institutional life</h3>
+    <h3>Legal philosophy, attention, and the conditions of public life</h3>
     <p>
       My work asks how legal norms become authoritative, how persons appear
-      before law as bearers of status and reasons, and how institutions earn
-      legitimacy through public justification. The pages below give brief
-      orientations to several current research lines.
+      before law as bearers of status and reasons, how attention is structured
+      by institutions and platforms, and how predictive AI reshapes the social
+      basis of risk-sharing cooperation. The pages below give brief
+      orientations to current research lines.
     </p>
     <a class="button" href="{{ "/research/" | prepend: site.baseurl }}">Research areas</a>
   </div>
@@ -73,6 +79,26 @@ keywords:
     </div>
 
     <div class="surface-card">
+      <p class="surface-meta">Active manuscript line</p>
+      <h5>Attention, Autonomy, and Justice</h5>
+      <p>
+        Work on attention capture, autonomy, fair opportunity, democratic
+        attention, and the normative structure of attentional justice.
+      </p>
+      <a class="button" href="{{ "/research/attention-and-justice/" | prepend: site.baseurl }}">Read more</a>
+    </div>
+
+    <div class="surface-card">
+      <p class="surface-meta">Montenegro presentation development</p>
+      <h5>Reliable AI and Risk-Sharing Cooperation</h5>
+      <p>
+        A developing research line from the Budva, Montenegro presentation on
+        predictive AI, risk pooling, equal respect, and algorithmic governance.
+      </p>
+      <a class="button" href="{{ "/research/reliable-ai-risk-sharing/" | prepend: site.baseurl }}">Read more</a>
+    </div>
+
+    <div class="surface-card">
       <p class="surface-meta">Book project</p>
       <h5>Human Dignity and Law</h5>
       <p>
@@ -80,16 +106,6 @@ keywords:
         answerability, and the limits of state power.
       </p>
       <a class="button" href="{{ "/research/human-dignity-and-law/" | prepend: site.baseurl }}">Read more</a>
-    </div>
-
-    <div class="surface-card">
-      <p class="surface-meta">Judicial reform</p>
-      <h5>Judicial Authority and Institutional Legitimacy</h5>
-      <p>
-        Work on courts, finality, constitutional review, institutional role,
-        and contemporary Korean judicial-reform debates.
-      </p>
-      <a class="button" href="{{ "/research/judicial-authority/" | prepend: site.baseurl }}">Read more</a>
     </div>
   </div>
 </div>
@@ -206,7 +222,7 @@ keywords:
               <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank" rel="noopener">{{ paper.paper_html_label | default: "HTML" }}</a>
             {% endif %}
             {% if paper.research_page %}
-              <a class="button" href="{{ paper.research_page | prepend: site.baseurl }}">Research Page</a>
+              <a class="button" href="{{ paper.research_page | prepend: site.baseurl }}">Research context</a>
             {% endif %}
             {% if paper.slides %}
               <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank" rel="noopener">Slides</a>
@@ -285,7 +301,7 @@ keywords:
               <a class="button" href="{{ paper.paper_html | prepend: site.baseurl }}" target="_blank" rel="noopener">{{ paper.paper_html_label | default: "HTML" }}</a>
             {% endif %}
             {% if paper.research_page %}
-              <a class="button" href="{{ paper.research_page | prepend: site.baseurl }}">Research Page</a>
+              <a class="button" href="{{ paper.research_page | prepend: site.baseurl }}">Research context</a>
             {% endif %}
             {% if paper.slides %}
               <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank" rel="noopener">Slides</a>
