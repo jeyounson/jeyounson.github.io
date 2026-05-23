@@ -55,6 +55,45 @@ ready to be described publicly.
 The plain `jekyll` command may fail on this machine if the system Ruby and
 user gem path are mixed.
 
+## Publication citation discoverability default
+
+For every publicly posted article, English translation, accepted manuscript,
+or publication-related HTML/PDF page, treat citation discoverability as part of
+the publication task, not as later SEO polish.
+
+A general research page is not enough. The concrete publication page should
+carry the machine-readable and human-readable citation context that lets
+scholars, search engines, and AI systems recognize the page as an authoritative
+entry point for the work.
+
+Minimum default for a publication page:
+
+- stable canonical URL
+- visible `Publication and Citation` box near the top of the page
+- version-of-record citation, DOI, and journal/KCI link where available
+- clear version note for an English translation, author manuscript, HTML
+  reading version, or PDF
+- `citation_*` metadata for title, author, date, journal, volume, issue,
+  pages, DOI, language, and PDF URL where available
+- `description`, `keywords`, Open Graph article metadata, and `rel="canonical"`
+- JSON-LD `ScholarlyArticle` data, including author ORCID when available
+- PDF alternate link when a public PDF is permitted
+- inclusion in `sitemap.xml`
+- `_data/publications.yaml` links that point to the concrete public page, with
+  labels such as `English translation`, `HTML`, `PDF`, or `DOI`
+
+Boundary rule: do not imply that an English translation or local HTML copy is
+the version of record unless it actually is. The public page should make the
+formal citation target explicit and should expose only materials that may be
+publicly posted.
+
+Before pushing citation-surface changes:
+
+- rebuild locally with the Ruby 3.3 Jekyll command above
+- validate any manually added JSON-LD
+- preview the page in a local browser
+- after pushing, verify that the GitHub Pages build completed
+
 **Stanford links**
 - Use fetch!
 - [Basic WWW for Individual Users](https://uit.stanford.edu/service/web/centralhosting/howto_user)
