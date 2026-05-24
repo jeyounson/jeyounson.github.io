@@ -25,6 +25,12 @@ og_type: article
 <p class="surface-meta">Public note · 2026-05-24</p>
 ### 칸트 형벌론, 사형제, 그리고 윤리교육의 철학적 압축
 
+<div class="surface-note citation-note">
+  <p><strong>권장 인용 표기</strong></p>
+  <p>손제연, 「칸트 형벌론, 사형제, 그리고 윤리교육의 철학적 압축」, <em>Jeyoun Son: Essays &amp; Public Notes</em>, 2026. 5. 24., https://jeyounson.github.io/essays/kant-punishment-and-ethics-education/ (접속일: 인용자가 실제로 확인한 날짜).</p>
+  <p>영문으로 표기할 때에는 Jeyoun Son, “Kant, Punishment, and the Philosophical Compression of Ethics Education,” <em>Jeyoun Son: Essays &amp; Public Notes</em>, May 24, 2026, https://jeyounson.github.io/essays/kant-punishment-and-ethics-education/ 를 사용할 수 있다. 이 글은 공개 해설문이므로 학술 논문처럼 인용하기보다, 웹 공개 글 또는 public note로 인용하는 것이 적절하다.</p>
+</div>
+
 이 글은 칸트의 형벌론과 사형제 논의가 한국 고등학교 윤리교육과 수능 문항 속에서 어떻게 압축되는지, 그리고 그 과정에서 학생들이 어떤 철학적 난점에 부딪히는지 검토하기 위한 공개 메모이다. 목적은 문항 풀이 기술을 더하는 데 있지 않고, 압축된 시험 언어 뒤의 논증 구조를 교육적으로 회복하는 데 있다.
 
 핵심 문제는 다음과 같다. 최근 수능형 선지들은 칸트 원문의 중요한 대목을 실제로 건드리고 있다. 그러나 선지와 해설의 압축성 때문에 **동의**, **입법**, **책임귀속**, **공적 정의**, **인격성 존중**이 서로 다른 층위의 개념이라는 점이 잘 드러나지 않는다. 이 때문에 학생들은 “동의가 아니라면서 왜 사회계약인가”, “범죄자가 현상체라면 왜 목적적 존재인가”, “사형이 어떻게 인격 존중인가”라는 질문에 도달한다. 이런 질문은 제거해야 할 혼란이 아니라, 윤리교육이 길러야 할 반성적 사고의 출발점이다.

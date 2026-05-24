@@ -24,25 +24,38 @@ html[lang="ko"] .navbar,
 html[lang="ko"] .footer {
   font-family: Raleway, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-html[lang="ko"] h1,
-html[lang="ko"] h2,
-html[lang="ko"] h3,
-html[lang="ko"] h4,
-html[lang="ko"] h5,
-html[lang="ko"] h6,
+html[lang="ko"] .main-description h1,
 html[lang="ko"] .surface-meta,
 html[lang="ko"] .button,
 html[lang="ko"] table {
   font-family: "Noto Sans KR", Raleway, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0;
 }
+html[lang="ko"] .container > h3,
+html[lang="ko"] .container > h4,
+html[lang="ko"] .container > h5,
+html[lang="ko"] .container > h6 {
+  font-family: "Noto Serif KR", "AppleMyungjo", "Nanum Myeongjo", serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #1f252b;
+}
 html[lang="ko"] p,
 html[lang="ko"] li {
   line-height: 1.85;
 }
+html[lang="ko"] .container > p:not(.surface-meta),
+html[lang="ko"] .container > ul,
+html[lang="ko"] .container > ol,
+html[lang="ko"] .container > blockquote,
 html[lang="ko"] .docs-section p:not(.surface-meta),
 html[lang="ko"] .docs-section li {
-  font-family: "Noto Serif KR", "Apple SD Gothic Neo", "Malgun Gothic", serif;
+  font-family: "Noto Serif KR", "AppleMyungjo", "Nanum Myeongjo", serif;
+}
+html[lang="ko"] .container > p:not(.surface-meta) {
+  font-size: 1.58rem;
+  line-height: 1.9;
+  margin-bottom: 2.2rem;
 }
 html[lang="ko"] h3 {
   line-height: 1.38;
@@ -59,6 +72,15 @@ html[lang="ko"] table {
 html[lang="ko"] th,
 html[lang="ko"] td {
   vertical-align: top;
+}
+html[lang="ko"] .citation-note p {
+  font-family: "Noto Sans KR", Raleway, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.22rem;
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+}
+html[lang="ko"] .citation-note p:last-child {
+  margin-bottom: 0;
 }
 
 h4 {
