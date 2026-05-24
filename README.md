@@ -5,7 +5,8 @@ Change one of the files in `_data`, unless you are changing the look of the webs
 
 Test changes with:
 ```
-/Users/jeyounson/.rubies/ruby-3.3.5/bin/ruby /Users/jeyounson/.gem/ruby/3.3.5/bin/jekyll build
+/opt/homebrew/opt/ruby@3.1/bin/bundle install
+/opt/homebrew/opt/ruby@3.1/bin/bundle exec jekyll build
 ```
 
 For a local browser preview, serve the generated `_site/` directory:
@@ -50,10 +51,12 @@ ready to be described publicly.
 - Keep the full manuscript authority in the relevant writing repository; this
   site should explain the work and link to the published or permitted public
   versions.
-- Rebuild locally with the same Ruby 3.3 command above.
+- Rebuild locally with the Ruby 3.1 Bundler/Jekyll command above.
 
 The plain `jekyll` command may fail on this machine if the system Ruby and
-user gem path are mixed.
+user gem path are mixed. Use the Homebrew Ruby 3.1 path explicitly. Ruby 4 is
+installed on this machine, but the GitHub Pages Jekyll bundle still expects a
+Ruby 3.x runtime.
 
 ## Publication citation discoverability default
 
