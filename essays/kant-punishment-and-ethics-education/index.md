@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "칸트 형벌론, 사형제, 그리고 윤리교육의 철학적 압축"
-permalink: /research/kant-punishment-and-ethics-education/
+permalink: /essays/kant-punishment-and-ethics-education/
 lang: ko
 description: "칸트의 형벌론과 사형제 논의가 한국 고등학교 윤리교육과 수능 문항에서 어떻게 압축되는지, 그리고 그 압축을 논증 능력의 교육으로 되돌리기 위한 공개 분석."
 keywords:

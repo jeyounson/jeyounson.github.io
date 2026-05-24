@@ -11,6 +11,56 @@ body {
   background: #fff;
 }
 
+/* Korean long-form pages: keep the English site identity, but give Korean
+   prose a calmer scholarly texture. */
+html[lang="ko"] body {
+  font-family: "Noto Serif KR", "Apple SD Gothic Neo", "Malgun Gothic", serif;
+  color: #222;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+html[lang="ko"] .header,
+html[lang="ko"] .navbar,
+html[lang="ko"] .footer {
+  font-family: Raleway, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html[lang="ko"] h1,
+html[lang="ko"] h2,
+html[lang="ko"] h3,
+html[lang="ko"] h4,
+html[lang="ko"] h5,
+html[lang="ko"] h6,
+html[lang="ko"] .surface-meta,
+html[lang="ko"] .button,
+html[lang="ko"] table {
+  font-family: "Noto Sans KR", Raleway, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+}
+html[lang="ko"] p,
+html[lang="ko"] li {
+  line-height: 1.85;
+}
+html[lang="ko"] .docs-section p:not(.surface-meta),
+html[lang="ko"] .docs-section li {
+  font-family: "Noto Serif KR", "Apple SD Gothic Neo", "Malgun Gothic", serif;
+}
+html[lang="ko"] h3 {
+  line-height: 1.38;
+}
+html[lang="ko"] h4,
+html[lang="ko"] h5 {
+  line-height: 1.45;
+}
+html[lang="ko"] table {
+  font-size: 1.22rem;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+html[lang="ko"] th,
+html[lang="ko"] td {
+  vertical-align: top;
+}
+
 h4 {
   letter-spacing: .06rem;
   font-weight: 600;
