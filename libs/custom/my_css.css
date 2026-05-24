@@ -75,9 +75,9 @@ html[lang="ko"] td {
 }
 html[lang="ko"] .citation-note p {
   font-family: "Noto Sans KR", Raleway, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.22rem;
-  line-height: 1.65;
-  margin-bottom: 0.8rem;
+  font-size: 1.12rem;
+  line-height: 1.55;
+  margin-bottom: 0.45rem;
 }
 html[lang="ko"] .citation-note p:last-child {
   margin-bottom: 0;
@@ -339,6 +339,12 @@ h4 {
   background: #f8fafc;
   padding: 10px 14px;
   color: #444;
+}
+.citation-note {
+  border-left-width: 2px;
+  background: #fbfcfe;
+  padding: 8px 12px;
+  margin: 1.2rem 0 2.6rem 0;
 }
 .surface-list {
   margin-left: 1.7rem;
