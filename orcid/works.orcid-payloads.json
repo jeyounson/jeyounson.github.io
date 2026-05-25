@@ -1,5 +1,58 @@
 [
   {
+    "cite_key": "ART003336278",
+    "payload": {
+      "title": {
+        "title": {
+          "value": "Legal Acts and Legal Agents: Interpretive Convergence, Institutional Roles, and the Structure of Legal Practice"
+        }
+      },
+      "type": "journal-article",
+      "journal-title": {
+        "value": "Korean Journal of Legal Philosophy"
+      },
+      "publication-date": {
+        "year": {
+          "value": "2026"
+        },
+        "month": {
+          "value": "04"
+        },
+        "day": {
+          "value": "30"
+        }
+      },
+      "url": {
+        "value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003336278"
+      },
+      "short-description": "A legal order is produced and sustained by many different actors: legislatures enact statutes, courts interpret them, administrative agencies implement them, and citizens and firms plan their conduct and assert rights by relying on legal materials. This article addresses how such a dispersed practice can nevertheless function as a common normative order by analyzing the internal structure of legal practice, especially the relation between legal acts, legal agents, and legal uptake-and-response. It argues that for a legal act to function as a stable public norm, it must satisfy three felicity constraints: Generality, Shareability, and Focal-point Stability. The article then reconceptualizes legislatures, executive officials, courts, citizens, and other legal subjects as differentiated legal agents participating in interpretive convergence. On this view, judicial authority is earned and mediated rather than self-authenticating, and familiar puzzles about judicial supremacy, hard cases, and activism are reframed as questions about how far particular decisions satisfy the G-S-F constraints under professional norms, precedential practices, reason-giving requirements, and structures of review.",
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.22286/kjlp.2026.29.1.002",
+            "external-id-url": {
+              "value": "https://doi.org/10.22286/kjlp.2026.29.1.002"
+            },
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "source-work-id",
+            "external-id-value": "ART003336278",
+            "external-id-url": {
+              "value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003336278"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "translated-title": {
+        "value": "법적 행위와 법적 행위자: 해석적 수렴, 제도적 역할, 그리고 법적 실천의 구조",
+        "language-code": "ko"
+      }
+    }
+  },
+  {
     "cite_key": "ART003296700",
     "payload": {
       "title": {

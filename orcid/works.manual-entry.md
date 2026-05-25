@@ -3,7 +3,23 @@
 Use these records when adding works manually in ORCID.
 Recommended ORCID form fields: title, journal title, publication date, URL, external IDs.
 
-## 1. The Interpretive Convergence Theory of Law
+## 1. Legal Acts and Legal Agents: Interpretive Convergence, Institutional Roles, and the Structure of Legal Practice
+
+- Status: Ready to enter
+- Cite key: `ART003336278`
+- Work type: `journal-article`
+- Title (English): Legal Acts and Legal Agents: Interpretive Convergence, Institutional Roles, and the Structure of Legal Practice
+- Title (Korean): 법적 행위와 법적 행위자: 해석적 수렴, 제도적 역할, 그리고 법적 실천의 구조
+- Journal: Korean Journal of Legal Philosophy
+- Journal (Korean): 법철학연구
+- Publication year: 2026
+- Publication date detail: Apr. 30.
+- DOI: 10.22286/kjlp.2026.29.1.002
+- URL: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003336278
+- External IDs: [{"external-id-type": "doi", "external-id-value": "10.22286/kjlp.2026.29.1.002", "external-id-url": {"value": "https://doi.org/10.22286/kjlp.2026.29.1.002"}, "external-id-relationship": "self"}, {"external-id-type": "source-work-id", "external-id-value": "ART003336278", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003336278"}, "external-id-relationship": "self"}]
+- Keywords: Interpretive Convergence, Legal Acts, Legal Agents, Legal Uptake, Judicial Authority
+
+## 2. The Interpretive Convergence Theory of Law
 
 - Status: Ready to enter
 - Cite key: `ART003296700`
@@ -19,7 +35,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "source-work-id", "external-id-value": "ART003296700", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003296700"}, "external-id-relationship": "self"}]
 - Keywords: Interpretive Convergence Theory of Law, Legal Positivism, Interpretivism, Legal Normativity, Emergentism, uptake
 
-## 2. The Validity of Law and the Radbruch Formula
+## 3. The Validity of Law and the Radbruch Formula
 
 - Status: Ready to enter
 - Cite key: `ART003080283`
@@ -35,7 +51,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "source-work-id", "external-id-value": "ART003080283", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003080283"}, "external-id-relationship": "self"}]
 - Keywords: Gustav Radbruch, Radbruch Formula, Validity of Law, Law and Morality, Reason-Based Account, Legal Obligation
 
-## 3. Legal Education in Undergraduate GE Courses
+## 4. Legal Education in Undergraduate GE Courses
 
 - Status: Ready to enter
 - Cite key: `ART002937726`
@@ -51,7 +67,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "source-work-id", "external-id-value": "ART002937726", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002937726"}, "external-id-relationship": "self"}]
 - Keywords: Liberal Education, General Education, Education on Law for Undergraduates, Law School
 
-## 4. An Inconvenient Truth of Weak AI: Fear of the Predictable, Not Fear of the uneXplainable
+## 5. An Inconvenient Truth of Weak AI: Fear of the Predictable, Not Fear of the uneXplainable
 
 - Status: Ready to enter
 - Cite key: `ART002912830`
@@ -67,7 +83,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "doi", "external-id-value": "10.38199/KJE.11.6", "external-id-url": {"value": "https://doi.org/10.38199/KJE.11.6"}, "external-id-relationship": "self"}, {"external-id-type": "source-work-id", "external-id-value": "ART002912830", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002912830"}, "external-id-relationship": "self"}]
 - Keywords: weak AI, mutual ignorance, credit society, personalized information, mutual coorperation, explainability, accountability, trustworthy AI
 
-## 5. Some Misconceptions about the Inner Morality of Law
+## 6. Some Misconceptions about the Inner Morality of Law
 
 - Status: Ready to enter
 - Cite key: `ART002923254`
@@ -83,7 +99,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "source-work-id", "external-id-value": "ART002923254", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002923254"}, "external-id-relationship": "self"}]
 - Keywords: Lon Fuller, inner morality of law, formalism, functionalism, procedural natural law theory, the rule of law
 
-## 6. Development of a Writing Ability Diagnosis System for University First-year Students － The Seoul National University Essay Examination
+## 7. Development of a Writing Ability Diagnosis System for University First-year Students － The Seoul National University Essay Examination
 
 - Status: Ready to enter
 - Cite key: `ART002921497`
@@ -99,7 +115,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "source-work-id", "external-id-value": "ART002921497", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002921497"}, "external-id-relationship": "self"}]
 - Keywords: college writing, writing test, first-year essay examination, writing ability diagnosis test, test development
 
-## 7. Infection as Bad Luck: The Right and Responsibility of Autonomous Agents in Pandemics
+## 8. Infection as Bad Luck: The Right and Responsibility of Autonomous Agents in Pandemics
 
 - Status: Ready to enter
 - Cite key: `ART002753846`
@@ -115,7 +131,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "source-work-id", "external-id-value": "ART002753846", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002753846"}, "external-id-relationship": "self"}]
 - Keywords: Liberalism, Luck Egalitarianism, Vector Argument, COVID-19, Pandemic, Sonderopfertheorie
 
-## 8. A Critical Analysis of Dokyun Kim’s Theory of Justice in Korea
+## 9. A Critical Analysis of Dokyun Kim’s Theory of Justice in Korea
 
 - Status: Ready to enter
 - Cite key: `ART002714278`
@@ -131,7 +147,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "source-work-id", "external-id-value": "ART002714278", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002714278"}, "external-id-relationship": "self"}]
 - Keywords: Justice, Institutional theory of desert, Rawls’ Priority Problem, Samuel Scheffler, Theory of Justice in Korea
 
-## 9. Justification of a Moral Claim to Respect Human Dignity
+## 10. Justification of a Moral Claim to Respect Human Dignity
 
 - Status: Ready to enter
 - Cite key: `ART002584158`
@@ -147,7 +163,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "doi", "external-id-value": "10.22286/kjlp.2020.23.1.002", "external-id-url": {"value": "https://doi.org/10.22286/kjlp.2020.23.1.002"}, "external-id-relationship": "self"}, {"external-id-type": "source-work-id", "external-id-value": "ART002584158", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002584158"}, "external-id-relationship": "self"}]
 - Keywords: Human Dignity, Strong Version of Dignitarianism, Justification, Legal Dignitarianism
 
-## 10. Legal expressivism and the nature of expressive harm
+## 11. Legal expressivism and the nature of expressive harm
 
 - Status: Ready to enter
 - Cite key: `ART002495391`
@@ -163,7 +179,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "doi", "external-id-value": "10.22286/kjlp.2019.22.2.003", "external-id-url": {"value": "https://doi.org/10.22286/kjlp.2019.22.2.003"}, "external-id-relationship": "self"}, {"external-id-type": "source-work-id", "external-id-value": "ART002495391", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002495391"}, "external-id-relationship": "self"}]
 - Keywords: Legal Expressivism, legal statements and their meanings, expressive harm, legitimacy
 
-## 11. Kant’s Conception of ‘Recht’
+## 12. Kant’s Conception of ‘Recht’
 
 - Status: Ready to enter
 - Cite key: `ART002428217`
@@ -179,7 +195,7 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - External IDs: [{"external-id-type": "doi", "external-id-value": "10.22286/kjlp.2018.21.3.003", "external-id-url": {"value": "https://doi.org/10.22286/kjlp.2018.21.3.003"}, "external-id-relationship": "self"}, {"external-id-type": "source-work-id", "external-id-value": "ART002428217", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002428217"}, "external-id-relationship": "self"}]
 - Keywords: Kant, The Metaphysics of Morals, the Doctrine of Right, Rechtslehre, law-rights-correctness, ‘Recht’ & ‘recht’, translation
 
-## 12. Understanding human dignity as a topological concept
+## 13. Understanding human dignity as a topological concept
 
 - Status: Ready to enter
 - Cite key: `ART002344173`
@@ -194,4 +210,3 @@ Recommended ORCID form fields: title, journal title, publication date, URL, exte
 - URL: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002344173
 - External IDs: [{"external-id-type": "doi", "external-id-value": "10.22286/kjlp.2018.21.1.008", "external-id-url": {"value": "https://doi.org/10.22286/kjlp.2018.21.1.008"}, "external-id-relationship": "self"}, {"external-id-type": "source-work-id", "external-id-value": "ART002344173", "external-id-url": {"value": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002344173"}, "external-id-relationship": "self"}]
 - Keywords: human dignity, dignitas, high status, elevation of morality, topological concept, Kant, Jeremy Waldron, Oliver Sensen
-
