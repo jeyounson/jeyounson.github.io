@@ -65,7 +65,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
   <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -90,7 +90,7 @@
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+  <script src="{{ '/libs/custom/my_js.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -99,12 +99,13 @@
 
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content · 본문으로</a>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-    <section class="header">
+    <header class="header">
       <div class="row">
 
         <!-- Profile photo -->
@@ -118,7 +119,7 @@
 
         <!-- Name / title / contact -->
         <div class="nine columns main-description">
-          <h1>{{ site.data.main_info.name }}</h1>
+          <h1><a href="{{ '/' | relative_url }}">{{ site.data.main_info.name }} <span class="name-ko" lang="ko">손제연</span></a></h1>
           <p class="header-title">{{ site.data.main_info.title }}</p>
           <p class="header-affiliation">{{ site.data.main_info.affiliation }}</p>
           <p class="header-email"><a href="mailto:{{ site.data.main_info.email }}" style="color:inherit;text-decoration:none;">{{ site.data.main_info.email }}</a></p>
@@ -175,24 +176,27 @@
         </div>
 
       </div>
-    </section>
+    </header>
 
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
       <div class="container">
         <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="{{ "/index.html#bio" | prepend: site.baseurl }}">Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ "/#bio" | relative_url }}">About</a></li>
           <li class="navbar-item"><a class="navbar-link" href="{{ "/research/" | prepend: site.baseurl }}">Research</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="{{ "/essays/" | prepend: site.baseurl }}">Essays</a></li>
           <li class="navbar-item"><a class="navbar-link" href="{{ "/index.html#publications" | prepend: site.baseurl }}">Publications</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="{{ "/index.html#resume" | prepend: site.baseurl }}">Vitæ</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ "/teaching/" | relative_url }}"{% if page.url == '/teaching/' %} aria-current="page"{% endif %}>Teaching · 교육</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ "/essays/" | prepend: site.baseurl }}">Essays</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ "/#resume" | relative_url }}">CV</a></li>
         </ul>
       </div>
     </nav>
 
-    {{ content }}
+    <main id="main-content" tabindex="-1">
+      {{ content }}
+    </main>
 
-    <div class="footer">
+    <footer class="footer">
+      <p class="footer-destinations"><span>Research &amp; publications · here</span><a href="{{ site.data.destinations.workshops }}" lang="ko">DeepWrite 공개 특강 ↗</a><a href="{{ site.data.destinations.course }}" lang="ko">수강생 로그인 ↗</a></p>
       <div class="row">
         <div class="four columns">
           {{ site.data.main_info.name }}
@@ -249,12 +253,14 @@
 
         </div>
       </div>
-    </div>
+    </footer>
 
   </div>
 
   <!-- Google Analytics -->
+  {% if site.data.main_info.google_analystics_tracking_id %}
   {% include google_analytics.html %}
+  {% endif %}
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

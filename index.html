@@ -15,6 +15,17 @@ keywords:
   - AI ethics
 ---
 <!-- ========== BIO ========== -->
+<section class="start-here" aria-labelledby="start-heading">
+  <p class="eyebrow">Legal philosophy &amp; argumentative writing</p>
+  <h2 id="start-heading">Research, writing &amp; public life.</h2>
+  <p class="start-intro" lang="ko">법철학을 연구하고, 자신의 이유를 쓰는 일을 가르칩니다.</p>
+  <div class="entry-paths">
+    <a href="{{ '/research/' | relative_url }}"><strong>Research <span aria-hidden="true">→</span></strong><span lang="ko">연구 주제와 논문의 맥락</span></a>
+    <a href="{{ '/teaching/' | relative_url }}"><strong>Teaching · DeepWrite <span aria-hidden="true">→</span></strong><span lang="ko">공개 특강·글쓰기 자료·수업</span></a>
+    <a href="{{ '/essays/' | relative_url }}"><strong>Essays <span aria-hidden="true">→</span></strong><span lang="ko">연구와 교육을 잇는 공개 글</span></a>
+  </div>
+  <p class="quick-workshops" lang="ko">특강 자료를 찾으시나요? <a href="{{ site.data.destinations.workshops }}">DeepWrite 공개 특강 바로가기 ↗</a> <span>로그인 없이 열람</span></p>
+</section>
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
   <p>
@@ -191,14 +202,20 @@ keywords:
     <div class="tab-pane active" id="papers-all">
 
       <!-- Category filter buttons -->
-      <div class="pub-filter-bar" id="filter-bar-all">
-        <span class="filter-btn active" data-cat="all">All</span>
+      <div class="publication-tools" hidden>
+        <label for="publication-search">Find a publication · 논문 찾기</label>
+        <input id="publication-search" type="search" placeholder="Title, topic, author · 제목, 주제, 저자" aria-controls="publication-list">
+      <div class="pub-filter-bar" id="filter-bar-all" role="group" aria-label="Publication categories">
+        <button type="button" class="filter-btn active" data-cat="all" aria-pressed="true">All</button>
         {% assign cats_a = papers_all | map: "category" | uniq | sort %}
         {% for c in cats_a %}
-          <span class="filter-btn" data-cat="{{ c }}">{{ c }}</span>
+          <button type="button" class="filter-btn" data-cat="{{ c }}" aria-pressed="false">{{ c }}</button>
         {% endfor %}
       </div>
+        <p id="publication-count" role="status" aria-live="polite"></p>
+      </div>
 
+      <div id="publication-list">
       {% for paper in papers_all %}
         <div class="paper" data-cat="{{ paper.category }}">
 
@@ -229,9 +246,8 @@ keywords:
           {% endif %}
 
           {% if paper.abstract_en %}
-            <a class="abstract-toggle" onclick="toggleAbstract(this)">
-              Abstract <span class="arrow">▼</span>
-            </a>
+            <details class="paper-abstract">
+            <summary class="abstract-toggle">Abstract · 초록</summary>
             <div class="abstract-body">
               <span class="lang-en">{{ paper.abstract_en }}</span>
               {% if paper.abstract %}
@@ -239,6 +255,7 @@ keywords:
                 <span class="lang-ko" style="color:#555;">{{ paper.abstract }}</span>
               {% endif %}
             </div>
+            </details>
           {% endif %}
 
           <div class="paper-buttons" style="margin-top:7px;">
@@ -264,46 +281,11 @@ keywords:
 
         </div>
       {% endfor %}
+      </div>
     </div><!-- /papers-all -->
 
   </div><!-- /tab-content -->
 </div><!-- /publications -->
-
-<!-- Publications JS: abstract toggle + category filter -->
-<script>
-function toggleAbstract(el) {
-  var body = el.nextElementSibling;
-  var arrow = el.querySelector('.arrow');
-  if (body.classList.contains('open')) {
-    body.classList.remove('open');
-    arrow.textContent = '▼';
-  } else {
-    body.classList.add('open');
-    arrow.textContent = '▲';
-  }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.pub-filter-bar').forEach(function(bar) {
-    var pane = bar.closest('.tab-pane') || bar.closest('.docs-section');
-    if (!pane) return;
-    bar.querySelectorAll('.filter-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        bar.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
-        btn.classList.add('active');
-        var cat = btn.getAttribute('data-cat');
-        pane.querySelectorAll('.paper').forEach(function(p) {
-          if (cat === 'all' || p.getAttribute('data-cat') === cat) {
-            p.style.display = '';
-          } else {
-            p.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-});
-</script>
 
 <!-- ========== PROJECTS ==========
   TODO: 프로젝트를 추가할 준비가 되면 아래 주석을 해제하세요.

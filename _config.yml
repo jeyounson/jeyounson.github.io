@@ -1,8 +1,16 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-url: "https://jeyounson.github.io"
-# baseurl: /msaveski
+url: "https://www.jeyounson.com"
+baseurl: ""
+exclude:
+  - vendor
+  - docs
+  - scripts
+  - orcid
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 
 collections:
   projects:

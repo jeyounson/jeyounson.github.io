@@ -3,10 +3,13 @@
 ## Updates guide
 Change one of the files in `_data`, unless you are changing the look of the website.
 
-Test changes with:
+Test changes using the installed Ruby 3.4 runtime and repository-local dependencies:
 ```
-/opt/homebrew/opt/ruby@3.1/bin/bundle install
-/opt/homebrew/opt/ruby@3.1/bin/bundle exec jekyll build
+export PATH="/opt/homebrew/opt/ruby@3.4/bin:$PATH"
+export BUNDLE_PATH=vendor/bundle
+bundle install --frozen
+bundle exec jekyll build
+bundle exec ruby scripts/validate_site.rb
 ```
 
 For a local browser preview, serve the generated `_site/` directory:
@@ -16,16 +19,9 @@ cd _site
 python3 -m http.server 4000
 ```
 
-Push to the ML web directory:
-```
-rm -rf public_html
-mkdir public_html
-```
-```
-./__deploy.sh
-```
+Production uses GitHub Pages, publishing `master` at `https://www.jeyounson.com`. Preserve the root `CNAME`. Publish only with user approval, use the workspace push-with-closeout wrapper, and verify the exact GitHub Pages build and HTTPS pages after pushing. The old MIT deployment script is not this site's deployment path.
 
-More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
+The [2026-09-22 repair plan](docs/site-ecosystem-repair-2026-09-22.ko.md) defines the public website/DeepWrite boundaries. Education links live in `_data/destinations.yml`; do not duplicate course materials or change authenticated course operations here.
 
 ## ORCID workflow
 
@@ -51,12 +47,9 @@ ready to be described publicly.
 - Keep the full manuscript authority in the relevant writing repository; this
   site should explain the work and link to the published or permitted public
   versions.
-- Rebuild locally with the Ruby 3.1 Bundler/Jekyll command above.
+- Rebuild locally with the Bundler/Jekyll command above.
 
-The plain `jekyll` command may fail on this machine if the system Ruby and
-user gem path are mixed. Use the Homebrew Ruby 3.1 path explicitly. Ruby 4 is
-installed on this machine, but the GitHub Pages Jekyll bundle still expects a
-Ruby 3.x runtime.
+The plain `jekyll` command may fail if system Ruby and user gem paths are mixed. Use the Ruby 3.4 runtime and repository-local `BUNDLE_PATH` above, preserving `Gemfile.lock`.
 
 ## Publication citation discoverability default
 
@@ -115,7 +108,7 @@ completeness baseline.
 
 Before pushing citation-surface changes:
 
-- rebuild locally with the Ruby 3.3 Jekyll command above
+- rebuild locally with the Bundler/Jekyll command above
 - validate any manually added JSON-LD
 - preview the page in a local browser
 - after pushing, verify that the GitHub Pages build completed

@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Teaching · DeepWrite"
+lang: ko
+description: "손제연의 논증적 글쓰기 교육. DeepWrite 공개 특강·워크숍, 강의 영상과 수강생 학습공간으로 연결합니다."
+---
+<section class="teaching-intro" aria-labelledby="teaching-heading">
+  <p class="eyebrow" lang="en">Teaching &amp; learning</p>
+  <h2 id="teaching-heading">질문을 세우고,<br>자신의 이유를 씁니다.</h2>
+  <p>DeepWrite는 논증적 글쓰기 교육의 이름입니다. 공개 특강을 찾는 분과 수업에 참여하는 학생이 각자의 목적지로 바로 갈 수 있도록 안내합니다.</p>
+</section>
+
+<div class="teaching-paths">
+  <section class="teaching-path" aria-labelledby="public-teaching">
+    <p class="access-label">누구나 · 로그인 불필요</p>
+    <h3 id="public-teaching">공개 특강·워크숍</h3>
+    <p>WAC 특강의 소개, 공개 강의자료와 학생용 활동지를 DeepWrite에서 확인합니다. 최신 자료는 특강 페이지 한 곳에서 관리합니다.</p>
+    <a class="destination-link" href="{{ site.data.destinations.workshops }}">DeepWrite 공개 특강 열기 <span aria-hidden="true">↗</span></a>
+    <p class="destination-host">deepwrite.jeyounson.com/workshops/</p>
+  </section>
+  <section class="teaching-path course-path" aria-labelledby="course-teaching">
+    <p class="access-label">수강생 · 로그인 필요</p>
+    <h3 id="course-teaching">진행 중인 수업</h3>
+    <p>과제 작성, 제출 상태 확인과 피드백 등 수업 활동은 기존 DeepWrite 학습공간에서 계속합니다.</p>
+    <a class="destination-link" href="{{ site.data.destinations.course }}">수강생 로그인 <span aria-hidden="true">↗</span></a>
+    <p class="destination-host">deepwrite.jeyounson.com</p>
+  </section>
+</div>
+
+<section class="teaching-resources" aria-labelledby="teaching-resources-heading">
+  <h3 id="teaching-resources-heading">함께 읽고 보기</h3>
+  <div class="resource-row"><div><h4>강의 영상</h4><p>논증적 글쓰기와 관련 강의 영상.</p></div><a href="{{ site.data.main_info.youtube }}">YouTube에서 보기 ↗</a></div>
+  <div class="resource-row"><div><h4>공개 글과 에세이</h4><p>연구와 교육의 질문을 더 넓은 대화로 이어 가는 글.</p></div><a href="{{ '/essays/' | relative_url }}">에세이 읽기 →</a></div>
+  <div class="resource-row archive-row"><div><h4>기존 글쓰기 자료 아카이브</h4><p><code>{{ site.data.destinations.archive_host }}</code>의 기존 자료는 별도 보관 공간입니다. 특강의 최신 자료는 위의 공개 특강 페이지에서 확인하세요.</p></div>{% if site.data.destinations.archive_url != '' %}<a href="{{ site.data.destinations.archive_url }}">아카이브 열기 ↗</a>{% else %}<span class="connection-notice">아카이브 연결 점검 중</span>{% endif %}</div>
+</section>
+<p class="boundary-note">이 페이지는 교육 자료의 안내 입구입니다. 수업의 과제·제출물·피드백을 복사하거나 공개하지 않습니다.</p>

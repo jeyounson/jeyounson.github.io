@@ -1,94 +1,41 @@
-$(document).ready(function() {
-
-  // Variables
-  var $codeSnippets = $('.code-example-body'),
-      $nav = $('.navbar'),
-      $body = $('body'),
-      $window = $(window),
-      $popoverLink = $('[data-popover]'),
-      navOffsetTop = $nav.offset().top,
-      $document = $(document),
-      entityMap = {
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': '&quot;',
-        "'": '&#39;',
-        "/": '&#x2F;'
-      }
-
-  function init() {
-    $window.on('scroll', onScroll)
-    $window.on('resize', resize)
-    $popoverLink.on('click', openPopover)
-    $document.on('click', closePopover)
-    $('a[href^="#"]').on('click', smoothScroll)
-    buildSnippets();
-  }
-
-  function smoothScroll(e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    var target = this.hash,
-        menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-40
-    }, 0, 'swing', function () {
-        window.location.hash = target;
-        $(document).on("scroll", onScroll);
+document.addEventListener('DOMContentLoaded', function () {
+  // Native anchors, sticky navigation and details work without JavaScript.
+  document.querySelectorAll('.code-example-body').forEach(function (snippet) {
+    snippet.textContent = snippet.innerHTML;
+  });
+  var tools = document.querySelector('.publication-tools');
+  if (!tools) return;
+  var search = document.getElementById('publication-search');
+  var count = document.getElementById('publication-count');
+  var buttons = Array.from(tools.querySelectorAll('[data-cat]'));
+  var papers = Array.from(document.querySelectorAll('#publication-list .paper'));
+  var category = 'all';
+  var normalize = function (value) { return value.normalize('NFC').toLocaleLowerCase().trim(); };
+  var searchable = papers.map(function (paper) { return normalize(paper.textContent); });
+  function update() {
+    var terms = normalize(search.value).split(/\s+/).filter(Boolean);
+    var visible = 0;
+    papers.forEach(function (paper, index) {
+      var matches = (category === 'all' || paper.dataset.cat === category) &&
+        terms.every(function (term) { return searchable[index].includes(term); });
+      paper.hidden = !matches;
+      if (matches) visible += 1;
     });
+    count.textContent = visible ? visible + ' / ' + papers.length + ' publications · 논문' :
+      'No matches · 검색 결과가 없습니다. 검색어나 주제 필터를 바꿔 주세요.';
   }
-
-  function openPopover(e) {
-    e.preventDefault()
-    closePopover();
-    var popover = $($(this).data('popover'));
-    popover.toggleClass('open')
-    e.stopImmediatePropagation();
-  }
-
-  function closePopover(e) {
-    if($('.popover.open').length > 0) {
-      $('.popover').removeClass('open')
-    }
-  }
-
-  $("#button").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
-    }, 2000);
-});
-
-  function resize() {
-    $body.removeClass('has-docked-nav')
-    navOffsetTop = $nav.offset().top
-    onScroll()
-  }
-
-  function onScroll() {
-    if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
-      $body.addClass('has-docked-nav')
-    }
-    if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
-      $body.removeClass('has-docked-nav')
-    }
-  }
-
-  function escapeHtml(string) {
-    return String(string).replace(/[&<>"'\/]/g, function (s) {
-      return entityMap[s];
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      category = button.dataset.cat;
+      buttons.forEach(function (item) {
+        var active = item === button;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      update();
     });
-  }
-
-  function buildSnippets() {
-    $codeSnippets.each(function() {
-      var newContent = escapeHtml($(this).html())
-      $(this).html(newContent)
-    })
-  }
-
-
-  init();
-
+  });
+  search.addEventListener('input', update);
+  tools.hidden = false;
+  update();
 });
