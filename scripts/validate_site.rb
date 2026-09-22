@@ -55,6 +55,7 @@ check.call(home.css('.paper-abstract > summary').length == papers.count { |paper
 teaching = documents.fetch('teaching/index.html')
 check.call(teaching.at_css('a[href="https://deepwrite.jeyounson.com/workshops/"]'), 'Public workshop destination missing')
 check.call(teaching.at_css('a[href="https://deepwrite.jeyounson.com/login"]'), 'Course login destination missing')
+check.call(teaching.at_css('a[href="https://write.jeyounson.com/"]'), 'Verified archive destination missing')
 check.call(!teaching.css('a[href]').any? { |a| a['href'].match?(%r{room\.jeyounson|/(staff|admin|assignments|feedback)}) }, 'Unexpected operational/private destination')
 check.call(root.join('CNAME').read.strip == 'www.jeyounson.com', 'CNAME changed')
 check.call(site.join('robots.txt').read.include?('Sitemap: https://www.jeyounson.com/sitemap.xml'), 'Robots sitemap host mismatch')

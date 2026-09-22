@@ -2,5 +2,5 @@
 workshops: "https://deepwrite.jeyounson.com/workshops/"
 course: "https://deepwrite.jeyounson.com/login"
 archive_host: "write.jeyounson.com"
-# Keep the archive text-only until its separate HTTPS repair is verified.
-archive_url: ""
+# HTTPS and inherited archive routes verified on 2026-09-22.
+archive_url: "https://write.jeyounson.com/"
