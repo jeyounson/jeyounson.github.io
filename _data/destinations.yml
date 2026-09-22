@@ -4,3 +4,4 @@ course: "https://deepwrite.jeyounson.com/login"
 archive_host: "write.jeyounson.com"
 # HTTPS and inherited archive routes verified on 2026-09-22.
 archive_url: "https://write.jeyounson.com/"
+archive_guide: "https://write.jeyounson.com/archive-guide/"
